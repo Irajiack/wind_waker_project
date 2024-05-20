@@ -35,10 +35,8 @@
     - Lists           Cormorant
 */
 
-
-/* ============================================= VARIABLES ================================================ */
-
-$white: #fff;
+@use 'colors' as color;
+@use 'typography';
 
 
 /* ============================================= PRIMARY LAYOUT ================================================ */
@@ -50,88 +48,31 @@ body
     background-position:center;	
     background-repeat: no-repeat;
     background-size: cover;
-    background-color:#040814;
+    background-color:color.$richBlack;
 }
 
 header
 {
     text-align:center;
-}
+}  
 
-footer
-{
-    background-color:var(--Night50);
-    text-align:center;
-    padding:5px;
-    margin:30px;
-}
 
 /* ============================================= SECONDARY LAYOUT ================================================ */
 
-
+main
+{
+    width:90%;
+    padding:80px;
+    margin:0 auto;
+    background-color:color.$night90;
+    border-radius:10%;
+}
 
 /* ============================================= TERTIARY LAYOUT ================================================ */
 
 
 
-/* ============================================= TEXT RELATED ================================================ */
 
-h1, h2, h3, h4, h5, h6
-{
-    font-size: 1.5em;
-    margin: 0 0 10px 0;
-    text-transform: none;
-}
-h1
-{
-    color:$white;
-    font-family: "Philosopher";
-    font-size:6.5rem;
-}
-h2
-{
-    color:$white;
-    font-family: "Philosopher";
-    font-size:5.5rem;
-}
-h3
-{
-    color:$white;
-    font-family: "Alice";
-    font-size:2.5rem;
-}
-h4
-{
-    color:$white;
-    font-family: "Alice";
-    font-size:2.1rem;
-}
-h5, h6
-{
-    color:$white;
-    font-family: "CrimsonText";
-    font-size:1.6rem;
-}
-p
-{
-    color:$white;
-    font-family: "Cormorant";
-    font-size:1.6rem;
-    margin:10px 0 10px 0;
-    font-weight: 600;
-}
-ul 
-{
-    margin:0;
-}
-li
-{
-    color:$white;
-    font-family: "Cormorant";
-    font-size:1.6rem;
-    margin-left:-2.5rem;
-    list-style-type: none;
-}
 
 
 /* ============================================= SALIENT FEATURES ================================================ */

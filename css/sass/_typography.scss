@@ -1,0 +1,68 @@
+@use 'colors' as color;
+/* ============================================= TEXT RELATED ================================================ */
+
+%headers
+{
+    margin:0 0 10px 0;
+}
+h1
+{
+    @extend %headers;
+    color:color.$platinum;
+    font-family: "Philosopher";
+    font-size:4.5rem;
+}
+h2
+{
+    @extend %headers;
+    color:color.$platinum;
+    font-family: "Philosopher";
+    font-size:3.5rem;
+}
+h3
+{
+    @extend %headers;
+    color:color.$platinum;
+    font-family: "Alice";
+    font-size:2.5rem;
+}
+h4
+{
+    @extend %headers;
+    color:color.$platinum;
+    font-family: "Alice";
+    font-size:2.1rem;
+}
+h5, h6
+{
+    @extend %headers;
+    color:color.$platinum;
+    font-family: "CrimsonText";
+    font-size:1.6rem;
+}
+
+
+%paragraphs
+{
+    font-family: "Cormorant";
+    font-size:1.6rem;
+    margin:10px 0 10px 0;
+    font-weight: 600;
+}
+p
+{
+    @extend %paragraphs;
+    color:color.$platinum;
+}
+a
+{
+    @extend %paragraphs;
+    color:color.$kellyGreen;
+    text-decoration: underline;
+    
+    &:hover
+    {
+        color:color.$pear;
+        font-style:italic;
+    }
+}

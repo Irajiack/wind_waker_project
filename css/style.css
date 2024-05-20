@@ -31,7 +31,95 @@
     - Links           Cormorant
     - Lists           Cormorant
 */
-/* ============================================= VARIABLES ================================================ */
+/* ============================================= COLORS ================================================ */
+/* DOCUMENT INFORMATION
+    - Theme Name: Blood of Time & Light of Magic
+    - Version:    1.0.0
+	- Author:     Camille Elisabeth Bleau
+*/
+/* CSS DIRECTORY
+	1. = PRIMARY LAYOUT
+    2. = SECONDARY LAYOUT
+    3. = TERTIARY LAYOUT
+    4. = TEXT RELATED
+    5. = SALIENT FEATURE
+    6. = SITE WIDE
+	7. = UTILITIES
+	8. = MISCELLANEOUS
+*/
+/* TEXT COLORS
+    - Default header 1 & 2     --Sunset
+    - Default header 3 & 4     --Fawn
+    - Default header 5 & 6     --Coyote
+    - Default paragraph text   --Silver
+    - Default list text        --Silver
+    - Default links            --Fawn
+    - Default links Hover      --Champagne
+*/
+/* FONTS
+
+    - Header 1 & 2    Philosopher
+	- Header 4 & 3    Alice
+    - Header 5 & 6    Crimson Text
+    - Paragraphs      Sedan
+    - Links           Cormorant
+    - Lists           Cormorant
+*/
+/* ============================================= TEXT RELATED ================================================ */
+h5, h6, h4, h3, h2, h1 {
+  margin: 0 0 10px 0;
+}
+
+h1 {
+  color: #EAE8E3;
+  font-family: "Philosopher";
+  font-size: 4.5rem;
+}
+
+h2 {
+  color: #EAE8E3;
+  font-family: "Philosopher";
+  font-size: 3.5rem;
+}
+
+h3 {
+  color: #EAE8E3;
+  font-family: "Alice";
+  font-size: 2.5rem;
+}
+
+h4 {
+  color: #EAE8E3;
+  font-family: "Alice";
+  font-size: 2.1rem;
+}
+
+h5, h6 {
+  color: #EAE8E3;
+  font-family: "CrimsonText";
+  font-size: 1.6rem;
+}
+
+a, p {
+  font-family: "Cormorant";
+  font-size: 1.6rem;
+  margin: 10px 0 10px 0;
+  font-weight: 600;
+}
+
+p {
+  color: #EAE8E3;
+}
+
+a {
+  color: #68B940;
+  text-decoration: underline;
+}
+a:hover {
+  color: #C2EB3B;
+  font-style: italic;
+}
+
 /* ============================================= PRIMARY LAYOUT ================================================ */
 body {
   background-attachment: fixed;
@@ -46,72 +134,16 @@ header {
   text-align: center;
 }
 
-footer {
-  background-color: var(--Night50);
-  text-align: center;
-  padding: 5px;
-  margin: 30px;
-}
-
 /* ============================================= SECONDARY LAYOUT ================================================ */
+main {
+  width: 90%;
+  padding: 80px;
+  margin: 0 auto;
+  background-color: rgba(10, 10, 10, 0.9);
+  border-radius: 10%;
+}
+
 /* ============================================= TERTIARY LAYOUT ================================================ */
-/* ============================================= TEXT RELATED ================================================ */
-h1, h2, h3, h4, h5, h6 {
-  font-size: 1.5em;
-  margin: 0 0 10px 0;
-  text-transform: none;
-}
-
-h1 {
-  color: #fff;
-  font-family: "Philosopher";
-  font-size: 6.5rem;
-}
-
-h2 {
-  color: #fff;
-  font-family: "Philosopher";
-  font-size: 5.5rem;
-}
-
-h3 {
-  color: #fff;
-  font-family: "Alice";
-  font-size: 2.5rem;
-}
-
-h4 {
-  color: #fff;
-  font-family: "Alice";
-  font-size: 2.1rem;
-}
-
-h5, h6 {
-  color: #fff;
-  font-family: "CrimsonText";
-  font-size: 1.6rem;
-}
-
-p {
-  color: #fff;
-  font-family: "Cormorant";
-  font-size: 1.6rem;
-  margin: 10px 0 10px 0;
-  font-weight: 600;
-}
-
-ul {
-  margin: 0;
-}
-
-li {
-  color: #fff;
-  font-family: "Cormorant";
-  font-size: 1.6rem;
-  margin-left: -2.5rem;
-  list-style-type: none;
-}
-
 /* ============================================= SALIENT FEATURES ================================================ */
 /* ============================================= SITE WIDE ================================================ */
 /* ============================================= UTILITIES ================================================ */
