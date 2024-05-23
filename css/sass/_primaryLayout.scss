@@ -1,0 +1,19 @@
+
+/* ============================================= PRIMARY LAYOUT ================================================ */
+@use 'colors' as color;
+
+
+body
+{
+    background-attachment:fixed;
+    background-image:url(../pictures/interface/background.png);
+    background-position:center;	
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:color.$richBlack;
+}
+
+header
+{
+    text-align:center;
+}  

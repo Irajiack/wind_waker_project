@@ -1,5 +1,5 @@
-@use 'colors' as color;
 /* ============================================= TEXT RELATED ================================================ */
+@use 'colors' as color;
 
 %headers
 {
@@ -9,28 +9,28 @@ h1
 {
     @extend %headers;
     color:color.$platinum;
-    font-family: "Philosopher";
-    font-size:4.5rem;
+    font-family: "Tangerine";
+    font-size:5.5rem;
 }
 h2
 {
     @extend %headers;
     color:color.$platinum;
-    font-family: "Philosopher";
-    font-size:3.5rem;
+    font-family: "Tangerine";
+    font-size:4.5rem;
 }
 h3
 {
     @extend %headers;
     color:color.$platinum;
-    font-family: "Alice";
+    font-family: "Philosopher";
     font-size:2.5rem;
 }
 h4
 {
     @extend %headers;
     color:color.$platinum;
-    font-family: "Alice";
+    font-family: "Philosopher";
     font-size:2.1rem;
 }
 h5, h6
@@ -65,4 +65,35 @@ a
         color:color.$pear;
         font-style:italic;
     }
+}
+
+
+@font-face 
+{
+    font-family: "Philosopher";
+    src: url('fonts/Philosopher/Philosopher-Regular.ttf') format('truetype');
+}
+
+@font-face 
+{
+    font-family: "Cormorant";
+    src: url('fonts/Cormorant/static/Cormorant-Regular.ttf') format('truetype');
+}
+
+@font-face 
+{
+    font-family: "CrimsonText";
+    src: url('fonts/Crimson_Text/CrimsonText-Regular.ttf') format('truetype');
+}
+
+@font-face 
+{
+    font-family: "Sedan";
+    src: url('fonts/Sedan/Sedan-Regular.ttf') format('truetype');
+}
+
+@font-face 
+{
+    font-family: "Tangerine";
+    src: url('fonts/Tangerine/Tangerine-Regular.ttf') format('truetype');
 }
