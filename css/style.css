@@ -185,6 +185,20 @@ body {
 
 header {
   text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+main {
+  width: 90%;
+  padding: 80px;
+  margin: 0 auto;
+  background-color: rgba(10, 10, 10, 0.9);
+  border-radius: 10%;
 }
 
 /* DOCUMENT INFORMATION
@@ -221,10 +235,6 @@ header {
     - Lists           Cormorant
 */
 /* ============================================= SECONDARY LAYOUT ================================================ */
-main {
-  width: 90%;
-  padding: 80px;
-  margin: 0 auto;
-  background-color: rgba(10, 10, 10, 0.9);
-  border-radius: 10%;
+.logo {
+  width: 15%;
 }

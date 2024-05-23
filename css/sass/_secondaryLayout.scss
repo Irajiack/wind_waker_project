@@ -1,12 +1,7 @@
 /* ============================================= SECONDARY LAYOUT ================================================ */
 @use 'colors' as color;
 
-
-main
+.logo
 {
-    width:90%;
-    padding:80px;
-    margin:0 auto;
-    background-color:color.$night90;
-    border-radius:10%;
+    width:15%;
 }
