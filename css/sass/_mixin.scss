@@ -1,0 +1,17 @@
+/* ============================================= MIXIN ================================================ */
+@use 'colors' as color;
+
+@mixin navigation($decoration: underline, $fontStyle: normal)
+{
+    text-decoration: $decoration;
+    font-style: $fontStyle;
+}
+
+@mixin texts($color: color.$platinum, $fontFamily: "Cormorant", $fontSize:1.6rem)
+{
+    color:$color;
+    font-family: $fontFamily;
+    font-size:$fontSize;
+    margin:10px 0 10px 0;
+    font-weight: 600;
+}

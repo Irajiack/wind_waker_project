@@ -1,72 +1,54 @@
 /* ============================================= TEXT RELATED ================================================ */
 @use 'colors' as color;
+@use 'mixin' as *;
 
-%headers
-{
-    margin:0 0 10px 0;
-}
 h1
 {
-    @extend %headers;
-    color:color.$platinum;
-    font-family: "Tangerine";
-    font-size:5.5rem;
+    @include texts($fontFamily: "Tangerine", $fontSize:5.5rem);
 }
 h2
 {
-    @extend %headers;
-    color:color.$platinum;
-    font-family: "Tangerine";
-    font-size:4.5rem;
+    @include texts($fontFamily: "Tangerine", $fontSize:4.5rem);
 }
 h3
 {
-    @extend %headers;
-    color:color.$platinum;
-    font-family: "Philosopher";
-    font-size:2.5rem;
+    @include texts($fontFamily: "Philosopher", $fontSize:2.5rem);;
 }
 h4
 {
-    @extend %headers;
-    color:color.$platinum;
-    font-family: "Philosopher";
-    font-size:2.1rem;
+    @include texts($fontFamily: "Philosopher", $fontSize:2.1rem);
 }
 h5, h6
 {
-    @extend %headers;
-    color:color.$platinum;
-    font-family: "CrimsonText";
-    font-size:1.6rem;
+    @include texts($fontFamily: "CrimsonText", $fontSize:2rem);
 }
 
-
-%paragraphs
-{
-    font-family: "Cormorant";
-    font-size:1.6rem;
-    margin:10px 0 10px 0;
-    font-weight: 600;
-}
 p
 {
-    @extend %paragraphs;
-    color:color.$platinum;
+    @include texts();
 }
-a
+
+.links
 {
-    @extend %paragraphs;
-    color:color.$kellyGreen;
-    text-decoration: underline;
+    @include texts($color: color.$kellyGreen);
+    @include navigation();
     
     &:hover
     {
-        color:color.$pear;
-        font-style:italic;
+        @include texts($color: color.$pear);
+        @include navigation($decoration: underline overline);
+    }
+    &--main-nav
+    {
+        @include texts($color: color.$kellyGreen);
+        @include navigation($decoration: none);
+    }
+    &--main-nav:hover
+    {
+        @include texts($color: color.$pear);
+        @include navigation($decoration: underline overline);
     }
 }
-
 
 @font-face 
 {

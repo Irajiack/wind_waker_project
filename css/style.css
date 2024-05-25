@@ -31,6 +31,7 @@
     - Links           Cormorant
     - Lists           Cormorant
 */
+/* ============================================= MIXIN ================================================ */
 /* ============================================= COLORS ================================================ */
 /* DOCUMENT INFORMATION
     - Theme Name: Blood of Time & Light of Magic
@@ -66,58 +67,89 @@
     - Lists           Cormorant
 */
 /* ============================================= TEXT RELATED ================================================ */
-h5, h6, h4, h3, h2, h1 {
-  margin: 0 0 10px 0;
-}
-
 h1 {
   color: #EAE8E3;
   font-family: "Tangerine";
   font-size: 5.5rem;
+  margin: 10px 0 10px 0;
+  font-weight: 600;
 }
 
 h2 {
   color: #EAE8E3;
   font-family: "Tangerine";
   font-size: 4.5rem;
+  margin: 10px 0 10px 0;
+  font-weight: 600;
 }
 
 h3 {
   color: #EAE8E3;
   font-family: "Philosopher";
   font-size: 2.5rem;
+  margin: 10px 0 10px 0;
+  font-weight: 600;
 }
 
 h4 {
   color: #EAE8E3;
   font-family: "Philosopher";
   font-size: 2.1rem;
+  margin: 10px 0 10px 0;
+  font-weight: 600;
 }
 
 h5, h6 {
   color: #EAE8E3;
   font-family: "CrimsonText";
-  font-size: 1.6rem;
-}
-
-a, p {
-  font-family: "Cormorant";
-  font-size: 1.6rem;
+  font-size: 2rem;
   margin: 10px 0 10px 0;
   font-weight: 600;
 }
 
 p {
   color: #EAE8E3;
+  font-family: "Cormorant";
+  font-size: 1.6rem;
+  margin: 10px 0 10px 0;
+  font-weight: 600;
 }
 
-a {
+.links {
   color: #68B940;
+  font-family: "Cormorant";
+  font-size: 1.6rem;
+  margin: 10px 0 10px 0;
+  font-weight: 600;
   text-decoration: underline;
+  font-style: normal;
 }
-a:hover {
+.links:hover {
   color: #C2EB3B;
-  font-style: italic;
+  font-family: "Cormorant";
+  font-size: 1.6rem;
+  margin: 10px 0 10px 0;
+  font-weight: 600;
+  text-decoration: underline overline;
+  font-style: normal;
+}
+.links--main-nav {
+  color: #68B940;
+  font-family: "Cormorant";
+  font-size: 1.6rem;
+  margin: 10px 0 10px 0;
+  font-weight: 600;
+  text-decoration: none;
+  font-style: normal;
+}
+.links--main-nav:hover {
+  color: #C2EB3B;
+  font-family: "Cormorant";
+  font-size: 1.6rem;
+  margin: 10px 0 10px 0;
+  font-weight: 600;
+  text-decoration: underline overline;
+  font-style: normal;
 }
 
 @font-face {
@@ -140,39 +172,6 @@ a:hover {
   font-family: "Tangerine";
   src: url("fonts/Tangerine/Tangerine-Regular.ttf") format("truetype");
 }
-/* DOCUMENT INFORMATION
-    - Theme Name: Blood of Time & Light of Magic
-    - Version:    1.0.0
-	- Author:     Camille Elisabeth Bleau
-*/
-/* CSS DIRECTORY
-	1. = PRIMARY LAYOUT
-    2. = SECONDARY LAYOUT
-    3. = TERTIARY LAYOUT
-    4. = TEXT RELATED
-    5. = SALIENT FEATURE
-    6. = SITE WIDE
-	7. = UTILITIES
-	8. = MISCELLANEOUS
-*/
-/* TEXT COLORS
-    - Default header 1 & 2     --Sunset
-    - Default header 3 & 4     --Fawn
-    - Default header 5 & 6     --Coyote
-    - Default paragraph text   --Silver
-    - Default list text        --Silver
-    - Default links            --Fawn
-    - Default links Hover      --Champagne
-*/
-/* FONTS
-
-    - Header 1 & 2    Philosopher
-	- Header 4 & 3    Alice
-    - Header 5 & 6    Crimson Text
-    - Paragraphs      Sedan
-    - Links           Cormorant
-    - Lists           Cormorant
-*/
 /* ============================================= PRIMARY LAYOUT ================================================ */
 body {
   background-attachment: fixed;
@@ -184,13 +183,13 @@ body {
 }
 
 header {
-  text-align: center;
-  width: 100%;
+  width: 90%;
   display: flex;
+  margin: 0 auto;
   justify-content: space-between;
-  padding-left: 50px;
   padding-bottom: 20px;
   padding-top: 20px;
+  align-items: center;
 }
 
 main {
@@ -201,40 +200,69 @@ main {
   border-radius: 10%;
 }
 
-/* DOCUMENT INFORMATION
-    - Theme Name: Blood of Time & Light of Magic
-    - Version:    1.0.0
-	- Author:     Camille Elisabeth Bleau
-*/
-/* CSS DIRECTORY
-	1. = PRIMARY LAYOUT
-    2. = SECONDARY LAYOUT
-    3. = TERTIARY LAYOUT
-    4. = TEXT RELATED
-    5. = SALIENT FEATURE
-    6. = SITE WIDE
-	7. = UTILITIES
-	8. = MISCELLANEOUS
-*/
-/* TEXT COLORS
-    - Default header 1 & 2     --Sunset
-    - Default header 3 & 4     --Fawn
-    - Default header 5 & 6     --Coyote
-    - Default paragraph text   --Silver
-    - Default list text        --Silver
-    - Default links            --Fawn
-    - Default links Hover      --Champagne
-*/
-/* FONTS
-
-    - Header 1 & 2    Philosopher
-	- Header 4 & 3    Alice
-    - Header 5 & 6    Crimson Text
-    - Paragraphs      Sedan
-    - Links           Cormorant
-    - Lists           Cormorant
-*/
 /* ============================================= SECONDARY LAYOUT ================================================ */
+.main-nav {
+  width: 85%;
+  text-align: right;
+}
+.main-nav__list {
+  margin: 0;
+}
+.main-nav__list-item {
+  list-style-type: none;
+  display: inline-block;
+  margin: 1%;
+}
+
 .logo {
   width: 15%;
+}
+
+/* ============================================= SALIENT FEATURES ================================================ */
+.legend-carousel {
+  position: relative;
+}
+.legend-carousel__inner {
+  overflow: visible !important;
+  text-align: center;
+}
+.legend-carousel__indicators {
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-right: 15%;
+  margin-bottom: 1rem;
+  margin-left: 15%;
+}
+.legend-carousel__buttons {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 30px;
+  height: 3px;
+  padding: 0;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 0;
+  border-top-width: 0px;
+  border-top-style: none;
+  border-top-color: currentcolor;
+  border-bottom-width: 0px;
+  border-bottom-style: none;
+  border-bottom-color: currentcolor;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: 0.5;
+  transition: opacity 0.6s ease;
+}
+.legend-carousel__buttons--active {
+  opacity: 1 !important;
 }

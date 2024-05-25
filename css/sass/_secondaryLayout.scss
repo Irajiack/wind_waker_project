@@ -1,7 +1,24 @@
 /* ============================================= SECONDARY LAYOUT ================================================ */
 @use 'colors' as color;
 
+.main-nav
+{
+    width:85%;
+    text-align:right;
+    &__list
+    {
+        margin:0;
+    }
+    &__list-item
+    {
+        list-style-type: none;
+        display:inline-block;
+        margin:1%;
+    }
+}
+
 .logo
 {
     width:15%;
 }
+
