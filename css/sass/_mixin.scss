@@ -1,4 +1,4 @@
-/* ============================================= MIXIN ================================================ */
+
 @use 'colors' as color;
 
 @mixin navigation($decoration: underline, $fontStyle: normal)
@@ -7,11 +7,27 @@
     font-style: $fontStyle;
 }
 
-@mixin texts($color: color.$platinum, $fontFamily: "Cormorant", $fontSize:1.6rem)
+@mixin texts($color: color.$platinum, $fontFamily: "Cormorant", $fontSize:1.6rem, $textAlign:left)
 {
     color:$color;
     font-family: $fontFamily;
     font-size:$fontSize;
     margin:10px 0 10px 0;
     font-weight: 600;
+    text-align: $textAlign;
+}
+
+@mixin width($width: 100%)
+{
+    width:$width;
+}
+
+@mixin viewportHeight($height: 100vh)
+{
+    height:$height;
+}
+
+@mixin viewportHeight-max($height: 100vh)
+{
+    max-height:$height;
 }

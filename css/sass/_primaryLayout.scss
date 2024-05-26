@@ -1,7 +1,7 @@
 
 /* ============================================= PRIMARY LAYOUT ================================================ */
 @use 'colors' as color;
-
+@use 'mixin' as *;
 
 body
 {
@@ -24,11 +24,16 @@ header
     align-items:center;
 }  
 
-main
+.main-container
 {
     width:90%;
     padding:80px;
     margin:0 auto;
     background-color:color.$night90;
     border-radius:10%;
+
+    &--text-centered
+    {
+        @include texts($textAlign:center, $fontFamily: "Tangerine", $fontSize:5.5rem);
+    }
 }

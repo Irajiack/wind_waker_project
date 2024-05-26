@@ -1,45 +1,9 @@
-/* DOCUMENT INFORMATION
-    - Theme Name: Blood of Time & Light of Magic
-    - Version:    1.0.0
-	- Author:     Camille Elisabeth Bleau
-*/
 
-/* CSS DIRECTORY
-	1. = PRIMARY LAYOUT
-    2. = SECONDARY LAYOUT
-    3. = TERTIARY LAYOUT
-    4. = TEXT RELATED
-    5. = SALIENT FEATURE
-    6. = SITE WIDE
-	7. = UTILITIES
-	8. = MISCELLANEOUS
-*/
-
-/* TEXT COLORS
-    - Default header 1 & 2     --Sunset
-    - Default header 3 & 4     --Fawn
-    - Default header 5 & 6     --Coyote
-    - Default paragraph text   --Silver
-    - Default list text        --Silver
-    - Default links            --Fawn
-    - Default links Hover      --Champagne
-*/
-
-/* FONTS
-
-    - Header 1 & 2    Philosopher
-	- Header 4 & 3    Alice
-    - Header 5 & 6    Crimson Text
-    - Paragraphs      Sedan
-    - Links           Cormorant
-    - Lists           Cormorant
-*/
 @use 'mixin' as *;
 @use 'colors' as color;
 
-
-@use 'typography';
 @use 'primaryLayout';
 @use 'secondaryLayout';
+@use 'typography';
 @use 'salientFeatures';
 

@@ -1,71 +1,57 @@
-/* DOCUMENT INFORMATION
-    - Theme Name: Blood of Time & Light of Magic
-    - Version:    1.0.0
-	- Author:     Camille Elisabeth Bleau
-*/
-/* CSS DIRECTORY
-	1. = PRIMARY LAYOUT
-    2. = SECONDARY LAYOUT
-    3. = TERTIARY LAYOUT
-    4. = TEXT RELATED
-    5. = SALIENT FEATURE
-    6. = SITE WIDE
-	7. = UTILITIES
-	8. = MISCELLANEOUS
-*/
-/* TEXT COLORS
-    - Default header 1 & 2     --Sunset
-    - Default header 3 & 4     --Fawn
-    - Default header 5 & 6     --Coyote
-    - Default paragraph text   --Silver
-    - Default list text        --Silver
-    - Default links            --Fawn
-    - Default links Hover      --Champagne
-*/
-/* FONTS
+/* ============================================= PRIMARY LAYOUT ================================================ */
+body {
+  background-attachment: fixed;
+  background-image: url(../pictures/interface/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #040814;
+}
 
-    - Header 1 & 2    Philosopher
-	- Header 4 & 3    Alice
-    - Header 5 & 6    Crimson Text
-    - Paragraphs      Sedan
-    - Links           Cormorant
-    - Lists           Cormorant
-*/
-/* ============================================= MIXIN ================================================ */
-/* ============================================= COLORS ================================================ */
-/* DOCUMENT INFORMATION
-    - Theme Name: Blood of Time & Light of Magic
-    - Version:    1.0.0
-	- Author:     Camille Elisabeth Bleau
-*/
-/* CSS DIRECTORY
-	1. = PRIMARY LAYOUT
-    2. = SECONDARY LAYOUT
-    3. = TERTIARY LAYOUT
-    4. = TEXT RELATED
-    5. = SALIENT FEATURE
-    6. = SITE WIDE
-	7. = UTILITIES
-	8. = MISCELLANEOUS
-*/
-/* TEXT COLORS
-    - Default header 1 & 2     --Sunset
-    - Default header 3 & 4     --Fawn
-    - Default header 5 & 6     --Coyote
-    - Default paragraph text   --Silver
-    - Default list text        --Silver
-    - Default links            --Fawn
-    - Default links Hover      --Champagne
-*/
-/* FONTS
+header {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  align-items: center;
+}
 
-    - Header 1 & 2    Philosopher
-	- Header 4 & 3    Alice
-    - Header 5 & 6    Crimson Text
-    - Paragraphs      Sedan
-    - Links           Cormorant
-    - Lists           Cormorant
-*/
+.main-container {
+  width: 90%;
+  padding: 80px;
+  margin: 0 auto;
+  background-color: rgba(10, 10, 10, 0.9);
+  border-radius: 10%;
+}
+.main-container--text-centered {
+  color: #EAE8E3;
+  font-family: "Tangerine";
+  font-size: 5.5rem;
+  margin: 10px 0 10px 0;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* ============================================= SECONDARY LAYOUT ================================================ */
+.main-nav {
+  width: 85%;
+  text-align: right;
+}
+.main-nav__list {
+  margin: 0;
+}
+.main-nav__list-item {
+  list-style-type: none;
+  display: inline-block;
+  margin: 1%;
+}
+
+.logo {
+  width: 15%;
+}
+
 /* ============================================= TEXT RELATED ================================================ */
 h1 {
   color: #EAE8E3;
@@ -73,6 +59,7 @@ h1 {
   font-size: 5.5rem;
   margin: 10px 0 10px 0;
   font-weight: 600;
+  text-align: left;
 }
 
 h2 {
@@ -81,6 +68,7 @@ h2 {
   font-size: 4.5rem;
   margin: 10px 0 10px 0;
   font-weight: 600;
+  text-align: left;
 }
 
 h3 {
@@ -89,6 +77,7 @@ h3 {
   font-size: 2.5rem;
   margin: 10px 0 10px 0;
   font-weight: 600;
+  text-align: left;
 }
 
 h4 {
@@ -97,6 +86,7 @@ h4 {
   font-size: 2.1rem;
   margin: 10px 0 10px 0;
   font-weight: 600;
+  text-align: left;
 }
 
 h5, h6 {
@@ -105,6 +95,7 @@ h5, h6 {
   font-size: 2rem;
   margin: 10px 0 10px 0;
   font-weight: 600;
+  text-align: left;
 }
 
 p {
@@ -113,6 +104,7 @@ p {
   font-size: 1.6rem;
   margin: 10px 0 10px 0;
   font-weight: 600;
+  text-align: left;
 }
 
 .links {
@@ -121,6 +113,7 @@ p {
   font-size: 1.6rem;
   margin: 10px 0 10px 0;
   font-weight: 600;
+  text-align: left;
   text-decoration: underline;
   font-style: normal;
 }
@@ -130,6 +123,7 @@ p {
   font-size: 1.6rem;
   margin: 10px 0 10px 0;
   font-weight: 600;
+  text-align: left;
   text-decoration: underline overline;
   font-style: normal;
 }
@@ -139,6 +133,7 @@ p {
   font-size: 1.6rem;
   margin: 10px 0 10px 0;
   font-weight: 600;
+  text-align: left;
   text-decoration: none;
   font-style: normal;
 }
@@ -148,8 +143,21 @@ p {
   font-size: 1.6rem;
   margin: 10px 0 10px 0;
   font-weight: 600;
+  text-align: left;
   text-decoration: underline overline;
   font-style: normal;
+}
+.links--screen-reader {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: insert(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal;
 }
 
 @font-face {
@@ -172,58 +180,65 @@ p {
   font-family: "Tangerine";
   src: url("fonts/Tangerine/Tangerine-Regular.ttf") format("truetype");
 }
-/* ============================================= PRIMARY LAYOUT ================================================ */
-body {
-  background-attachment: fixed;
-  background-image: url(../pictures/interface/background.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #040814;
-}
-
-header {
-  width: 90%;
-  display: flex;
-  margin: 0 auto;
-  justify-content: space-between;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  align-items: center;
-}
-
-main {
-  width: 90%;
-  padding: 80px;
-  margin: 0 auto;
-  background-color: rgba(10, 10, 10, 0.9);
-  border-radius: 10%;
-}
-
-/* ============================================= SECONDARY LAYOUT ================================================ */
-.main-nav {
-  width: 85%;
-  text-align: right;
-}
-.main-nav__list {
-  margin: 0;
-}
-.main-nav__list-item {
-  list-style-type: none;
-  display: inline-block;
-  margin: 1%;
-}
-
-.logo {
-  width: 15%;
-}
-
 /* ============================================= SALIENT FEATURES ================================================ */
 .legend-carousel {
   position: relative;
+  margin-top: 60px;
+}
+.legend-carousel--intro {
+  color: #EAE8E3;
+  font-family: "Cormorant";
+  font-size: 2.6rem;
+  margin: 10px 0 10px 0;
+  font-weight: 600;
+  text-align: center;
+}
+.legend-carousel__controls {
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+.legend-carousel__controls:hover {
+  opacity: 1;
+}
+.legend-carousel__captions {
+  color: #fff;
+}
+.legend-carousel__captions--text-centered {
+  color: #EAE8E3;
+  font-family: "Cormorant";
+  font-size: 1.6rem;
+  margin: 10px 0 10px 0;
+  font-weight: 600;
+  text-align: center;
+}
+.legend-carousel__item {
+  position: relative;
+  display: none;
+  width: 100%;
+  transition: transform 0.6s ease-in-out;
+}
+.legend-carousel__item--active {
+  display: block;
+  transition: none;
+}
+.legend-carousel__item--pictures {
+  width: 100%;
+  max-height: 80vh;
 }
 .legend-carousel__inner {
-  overflow: visible !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.legend-carousel__inner--centered {
   text-align: center;
 }
 .legend-carousel__indicators {
@@ -234,32 +249,18 @@ main {
   z-index: 2;
   display: flex;
   justify-content: center;
-  padding: 0;
   margin-right: 15%;
-  margin-bottom: 1rem;
   margin-left: 15%;
 }
 .legend-carousel__buttons {
-  box-sizing: content-box;
-  flex: 0 1 auto;
   width: 30px;
-  height: 3px;
+  height: 5px;
   padding: 0;
   margin-right: 3px;
   margin-left: 3px;
-  text-indent: -999px;
-  cursor: pointer;
   background-color: #fff;
   background-clip: padding-box;
-  border: 0;
-  border-top-width: 0px;
-  border-top-style: none;
-  border-top-color: currentcolor;
-  border-bottom-width: 0px;
-  border-bottom-style: none;
-  border-bottom-color: currentcolor;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
+  border: 10px 0 0 10px solid transparent;
   opacity: 0.5;
   transition: opacity 0.6s ease;
 }

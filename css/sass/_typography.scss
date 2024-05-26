@@ -46,7 +46,20 @@ p
     &--main-nav:hover
     {
         @include texts($color: color.$pear);
-        @include navigation($decoration: underline overline);
+        @include navigation($decoration: underline overline); 
+    }
+    &--screen-reader
+    {
+        border:0;
+        clip: rect(1px, 1px, 1px, 1px);
+        clip-path: insert(50%);
+        height:1px;
+        margin:-1px;
+        overflow:hidden;
+        padding:0;
+        position:absolute;
+        width:1px;
+        word-wrap:normal;
     }
 }
 
