@@ -5,6 +5,35 @@
 .secondary-section
 {
     padding:30px;
+
+    &__banner
+    {
+        width:100%;
+        background-color:color.$blue60;
+        display:flex;
+        align-items:center;
+        justify-content:space-around;
+        padding:10px;
+        margin:30px 0 30px 0;
+    }
+
+    &__cards
+    {
+        width:100%;
+        display:flex;
+        align-items:center;
+        justify-content:space-around;
+        padding:10px;
+        margin:30px 0 30px 0;
+    }
+    &__items
+    {
+        text-align:center;
+        &--images
+        {
+            @include width($width: 15%);
+        }
+    }
 }
 .textual-input
 {
@@ -20,4 +49,6 @@
     margin:30px;
     @include texts($color: color.$richBlack);
 }
+
+
 
