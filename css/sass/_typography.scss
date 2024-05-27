@@ -61,6 +61,17 @@ p
         width:1px;
         word-wrap:normal;
     }
+    &--socials
+    {
+        
+        @include texts($color: color.$kellyGreen, $fontSize:2.6rem, $margin:10px);
+        @include navigation($decoration: none);
+    }
+    &--socials:hover
+    {
+        
+        @include texts($color: color.$pear, $fontSize:2.6rem, $margin:10px);
+    }
 }
 
 @font-face 

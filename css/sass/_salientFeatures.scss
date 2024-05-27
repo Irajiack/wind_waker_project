@@ -2,10 +2,12 @@
 @use 'colors' as color;
 @use 'mixin' as *;
 
+
 .legend-carousel
 {
     position: relative;
     margin-top:60px;
+    margin-bottom:90px;
 
     &--intro
     {

@@ -7,12 +7,12 @@
     font-style: $fontStyle;
 }
 
-@mixin texts($color: color.$platinum, $fontFamily: "Cormorant", $fontSize:1.6rem, $textAlign:left)
+@mixin texts($color: color.$platinum, $fontFamily: "Cormorant", $fontSize:1.6rem, $textAlign:left, $margin:10px 0 10px 0)
 {
     color:$color;
     font-family: $fontFamily;
     font-size:$fontSize;
-    margin:10px 0 10px 0;
+    margin:$margin;
     font-weight: 600;
     text-align: $textAlign;
 }

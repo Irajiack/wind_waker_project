@@ -1,5 +1,6 @@
 /* ============================================= SECONDARY LAYOUT ================================================ */
 @use 'colors' as color;
+@use 'mixin' as *;
 
 .main-nav
 {
@@ -22,3 +23,13 @@
     width:15%;
 }
 
+.separators
+{
+    width:100%;
+    text-align:center;
+
+    &__image
+    {
+        @include width($width:60%);
+    }
+}

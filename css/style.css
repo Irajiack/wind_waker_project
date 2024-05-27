@@ -6,6 +6,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #040814;
+  max-width: 100%;
 }
 
 header {
@@ -23,7 +24,7 @@ header {
   padding: 80px;
   margin: 0 auto;
   background-color: rgba(10, 10, 10, 0.9);
-  border-radius: 10%;
+  border-radius: 10px;
 }
 .main-container--text-centered {
   color: #EAE8E3;
@@ -32,6 +33,18 @@ header {
   margin: 10px 0 10px 0;
   font-weight: 600;
   text-align: center;
+}
+
+.footer {
+  padding: 20px 80px 20px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: rgba(10, 10, 10, 0.9);
 }
 
 /* ============================================= SECONDARY LAYOUT ================================================ */
@@ -50,6 +63,14 @@ header {
 
 .logo {
   width: 15%;
+}
+
+.separators {
+  width: 100%;
+  text-align: center;
+}
+.separators__image {
+  width: 60%;
 }
 
 /* ============================================= TEXT RELATED ================================================ */
@@ -159,6 +180,24 @@ p {
   width: 1px;
   word-wrap: normal;
 }
+.links--socials {
+  color: #68B940;
+  font-family: "Cormorant";
+  font-size: 2.6rem;
+  margin: 10px;
+  font-weight: 600;
+  text-align: left;
+  text-decoration: none;
+  font-style: normal;
+}
+.links--socials:hover {
+  color: #C2EB3B;
+  font-family: "Cormorant";
+  font-size: 2.6rem;
+  margin: 10px;
+  font-weight: 600;
+  text-align: left;
+}
 
 @font-face {
   font-family: "Philosopher";
@@ -184,6 +223,7 @@ p {
 .legend-carousel {
   position: relative;
   margin-top: 60px;
+  margin-bottom: 90px;
 }
 .legend-carousel--intro {
   color: #EAE8E3;
