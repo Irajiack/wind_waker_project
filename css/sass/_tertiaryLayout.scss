@@ -1,2 +1,23 @@
 /* ============================================= TERTIARY LAYOUT ================================================ */
 @use 'colors' as color;
+@use 'mixin' as *;
+
+.secondary-section
+{
+    padding:30px;
+}
+.textual-input
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.inputs
+{
+    border-radius:20px;
+    height:30px;
+    width:200px;
+    margin:30px;
+    @include texts($color: color.$richBlack);
+}
+

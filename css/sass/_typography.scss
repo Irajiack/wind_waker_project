@@ -23,9 +23,14 @@ h5, h6
     @include texts($fontFamily: "CrimsonText", $fontSize:2rem);
 }
 
-p
+.paragraphs
 {
     @include texts();
+    &--centeredTiny
+    {
+        @include texts($fontSize:1.2rem, $textAlign:center);
+    }
+
 }
 
 .links

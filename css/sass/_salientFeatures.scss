@@ -103,3 +103,79 @@
         }
     }
 }
+
+.buttons
+{
+    margin:20px 50px 20px 50px;
+    display:inline;
+    cursor:pointer;
+
+    %buttons__sides
+    {
+        display:inline-block;
+        position:absolute;
+        content: "";
+        width:31PX;
+        height:62px;
+        z-index:0;
+        background-position:center;
+        background-size:contain;
+        background-repeat:no-repeat;
+    }
+    %buttons__center
+    {
+        background-position:center;
+        background-size: 100% 62px;
+        background-repeat:no-repeat;
+        display:inline-block;
+        position:relative;
+        z-index:2;
+        height:62px;
+        min-width:172px;
+    }
+
+    &__inner
+    {
+        background-image:url(../../pictures/interface/buttons_Middle.png);
+        @extend %buttons__center;
+        
+        &::before
+        {
+            
+            background-image:url(../../pictures/interface/Buttons_Left.png);
+            @extend %buttons__sides;
+            right:100%;
+        }
+        &::after
+        {
+            background-image:url(../../pictures/interface/Buttons_Right.png);
+            @extend %buttons__sides;
+            
+        }
+    }
+    &__text
+    {
+        display:inline-block;
+        @include texts($textAlign:center, $fontSize:2.6rem, $margin:-35px 0 10px 0);
+        min-width:172px;
+        padding:0 15px 0 15px;
+    }
+
+    &:hover
+    {
+        background-image:url(../../pictures/interface/Buttons_Hover_Middle.png);
+        @extend %buttons__center;
+
+        &::before
+        {
+            background-image:url(../../pictures/interface/Buttons_Hover_Left.png);
+            @extend %buttons__sides;
+            right:100%;
+        }
+        &::after
+        {
+            background-image:url(../../pictures/interface/Buttons_Hover_Right.png);
+            @extend %buttons__sides;
+        }
+    }
+}
