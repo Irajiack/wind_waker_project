@@ -22,6 +22,14 @@
     width:$width;
 }
 
+@mixin margin($marginTop:20px, $marginLeft:20px, $marginRight:20px, $marginBottom:20px)
+{
+    margin-top:$marginTop;
+    margin-left:$marginLeft;
+    margin-right:$marginRight;
+    margin-bottom:$marginBottom;
+}
+
 @mixin viewportHeight($height: 100vh)
 {
     height:$height;
@@ -30,4 +38,19 @@
 @mixin viewportHeight-max($height: 100vh)
 {
     max-height:$height;
+}
+
+@mixin flexContainer($display:flex,$justifyContent:space-around,$flexWrap:nowrap,$flexDirection:row,$alignItems:center,$margin:0 auto)
+{
+    display: $display;
+    justify-content:$justifyContent;
+    flex-wrap:$flexWrap;
+    flex-direction:$flexDirection;
+    align-items:$alignItems;
+    margin:$margin;
+}
+
+@mixin flexContainer__items($flexGrow:1)
+{
+    flex-grow: $flexGrow;
 }

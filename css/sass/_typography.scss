@@ -13,6 +13,10 @@ h1
     {
         @include texts($fontFamily: "Tangerine", $fontSize:8.5rem, $textAlign:center, $margin:90px, $color:color.$rust);
     }
+    &--centered
+    {
+        @include texts($fontFamily: "Tangerine", $fontSize:4.5rem, $textAlign:center);
+    }
 }
 .header-3
 {

@@ -106,7 +106,6 @@
 
 .buttons
 {
-    margin:20px 50px 20px 50px;
     display:inline;
     cursor:pointer;
 
@@ -178,5 +177,15 @@
             @extend %buttons__sides;
         }
     }
+
+    &--marginLeft-50px
+    {
+        @include margin($marginLeft:50px, $marginRight:50px);
+    }
+    &--statistics
+    {
+        @include margin();
+    }
+
 }
 

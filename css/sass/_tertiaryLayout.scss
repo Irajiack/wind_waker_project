@@ -50,5 +50,25 @@
     @include texts($color: color.$richBlack);
 }
 
+.statistics
+{
+    @include flexContainer();
+    @include width();
+    @include margin($marginBottom:60px);
+
+    &__items
+    {
+        @include flexContainer__items();
+        @include margin();
+        text-align:center;
+    }
+    &__itemnized-list
+    {
+        @include flexContainer($justifyContent:flex-start);
+        @include width();
+        @include margin($marginTop:80px, $marginBottom:40px);
+    }
+}
+
 
 

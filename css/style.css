@@ -120,6 +120,41 @@ header {
   text-align: left;
 }
 
+.statistics {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 60px;
+}
+.statistics__items {
+  flex-grow: 1;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.statistics__itemnized-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 80px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+}
+
 /* ============================================= TEXT RELATED ================================================ */
 h1 {
   color: #EAE8E3;
@@ -143,6 +178,14 @@ h1 {
   font-family: "Tangerine";
   font-size: 8.5rem;
   margin: 90px;
+  font-weight: 600;
+  text-align: center;
+}
+.header-2--centered {
+  color: #EAE8E3;
+  font-family: "Tangerine";
+  font-size: 4.5rem;
+  margin: 10px 0 10px 0;
   font-weight: 600;
   text-align: center;
 }
@@ -388,7 +431,6 @@ h5, h6 {
 }
 
 .buttons {
-  margin: 20px 50px 20px 50px;
   display: inline;
   cursor: pointer;
 }
@@ -443,4 +485,16 @@ h5, h6 {
 }
 .buttons:hover::after {
   background-image: url(../../pictures/interface/Buttons_Hover_Right.png);
+}
+.buttons--marginLeft-50px {
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+.buttons--statistics {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
