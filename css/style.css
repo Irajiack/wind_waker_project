@@ -155,6 +155,28 @@ header {
   margin-bottom: 40px;
 }
 
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+}
+.cards__items {
+  flex-grow: 1;
+  border: 1px solid #EBD531;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 20px;
+}
+.cards__picture {
+  border-radius: 40px;
+}
+
 /* ============================================= TEXT RELATED ================================================ */
 h1 {
   color: #EAE8E3;

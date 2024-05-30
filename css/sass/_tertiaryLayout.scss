@@ -70,5 +70,24 @@
     }
 }
 
+.cards
+{
+
+    @include flexContainer();
+
+    &__items
+    {
+        @include flexContainer__items();
+        border:1px solid color.$citrine;
+        @include margin();
+        text-align:center;
+        padding:20px;
+    }
+    &__picture
+    {
+        border-radius:40px;
+    }
+}
+
 
 
