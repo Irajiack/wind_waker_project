@@ -26,9 +26,14 @@ h1
         @include texts($fontFamily: "Philosopher", $fontSize:2.5rem, $textAlign:center);
     }
 }
-h4
+.header-4
 {
     @include texts($fontFamily: "Philosopher", $fontSize:2.1rem);
+
+    &--centered
+    {
+        @include texts($fontFamily: "Philosopher", $fontSize:2.1rem, $textAlign:center);
+    }
 }
 h5, h6
 {
@@ -45,6 +50,10 @@ h5, h6
     &--centeredTiny
     {
         @include texts($fontSize:1.3rem, $textAlign:center);
+    }
+    &--icons
+    {
+        @include texts($fontSize:3.3rem, $textAlign:center,$color: color.$rust);
     }
 
 }

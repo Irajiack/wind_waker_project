@@ -78,14 +78,26 @@
     &__items
     {
         @include flexContainer__items();
-        border:1px solid color.$citrine;
         @include margin();
         text-align:center;
         padding:20px;
+        border:25px solid transparent;
+        border-image: url(../pictures/interface/SquareBorderGold.png) 60 stretch;
+        margin:20px;
     }
     &__picture
     {
         border-radius:40px;
+    }
+}
+
+.map
+{
+    @include width();
+    text-align:center;
+    &__image
+    {
+        @include width();
     }
 }
 

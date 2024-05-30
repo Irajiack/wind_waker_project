@@ -165,16 +165,26 @@ header {
 }
 .cards__items {
   flex-grow: 1;
-  border: 1px solid #EBD531;
   margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
   text-align: center;
   padding: 20px;
+  border: 25px solid transparent;
+  border-image: url(../pictures/interface/SquareBorderGold.png) 60 stretch;
+  margin: 20px;
 }
 .cards__picture {
   border-radius: 40px;
+}
+
+.map {
+  width: 100%;
+  text-align: center;
+}
+.map__image {
+  width: 100%;
 }
 
 /* ============================================= TEXT RELATED ================================================ */
@@ -229,13 +239,21 @@ h1 {
   text-align: center;
 }
 
-h4 {
+.header-4 {
   color: #EAE8E3;
   font-family: "Philosopher";
   font-size: 2.1rem;
   margin: 10px 0 10px 0;
   font-weight: 600;
   text-align: left;
+}
+.header-4--centered {
+  color: #EAE8E3;
+  font-family: "Philosopher";
+  font-size: 2.1rem;
+  margin: 10px 0 10px 0;
+  font-weight: 600;
+  text-align: center;
 }
 
 h5, h6 {
@@ -267,6 +285,14 @@ h5, h6 {
   color: #EAE8E3;
   font-family: "Cormorant";
   font-size: 1.3rem;
+  margin: 10px 0 10px 0;
+  font-weight: 600;
+  text-align: center;
+}
+.paragraphs--icons {
+  color: #C03F1F;
+  font-family: "Cormorant";
+  font-size: 3.3rem;
   margin: 10px 0 10px 0;
   font-weight: 600;
   text-align: center;
