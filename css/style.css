@@ -47,6 +47,13 @@ header {
   background-color: rgba(10, 10, 10, 0.9);
 }
 
+section {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
 /* ============================================= SECONDARY LAYOUT ================================================ */
 .main-nav {
   width: 85%;
@@ -71,6 +78,17 @@ header {
 }
 .separators__image {
   width: 60%;
+}
+
+.grid {
+  display: grid;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 100%;
+  grid-template-columns: repeat(7, 14% [col-start]);
+}
+.grid__item1 {
+  padding: 1.2%;
 }
 
 /* ============================================= TERTIARY LAYOUT ================================================ */
@@ -179,12 +197,69 @@ header {
   border-radius: 40px;
 }
 
+.form {
+  position: absolute;
+  text-align: left;
+  background-color: #040814;
+  padding: 30px;
+  width: 30%;
+  top: 50px;
+  border-radius: 30px;
+  right: 20px;
+}
+.form__name-entry {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+}
+.form__inputs {
+  width: 100%;
+  border-radius: 10px;
+  height: 40px;
+  margin: 30px;
+  color: #040814;
+  font-family: "Cormorant";
+  font-size: 1.6rem;
+  margin: 10px 0 10px 0;
+  font-weight: 600;
+  text-align: left;
+}
+.form__textarea {
+  width: 100%;
+  border-radius: 10px;
+  height: 150px;
+  margin: 30px;
+  color: #040814;
+  font-family: "Cormorant";
+  font-size: 1.6rem;
+  margin: 10px 0 10px 0;
+  font-weight: 600;
+  text-align: left;
+}
+
 .map {
+  height: 75vh;
+  overflow: hidden;
   width: 100%;
   text-align: center;
 }
 .map__image {
   width: 100%;
+  margin-top: -200px;
+}
+
+.endPage-links {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  width: 40%;
+  margin-top: 50px;
 }
 
 /* ============================================= TEXT RELATED ================================================ */
@@ -296,6 +371,14 @@ h5, h6 {
   margin: 10px 0 10px 0;
   font-weight: 600;
   text-align: center;
+}
+.paragraphs--tiny {
+  color: #EAE8E3;
+  font-family: "Cormorant";
+  font-size: 1.3rem;
+  margin: 10px 0 10px 0;
+  font-weight: 600;
+  text-align: left;
 }
 
 .links {

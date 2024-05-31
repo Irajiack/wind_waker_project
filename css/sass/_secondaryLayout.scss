@@ -33,3 +33,17 @@
         @include width($width:60%);
     }
 }
+
+.grid
+{
+    display: grid;
+    justify-content: space-between;
+    align-content: space-between;  
+    width:100%; 
+    grid-template-columns: repeat(7, 14% [col-start]);
+
+    &__item1
+    {
+        padding:1.2%;
+    }
+}

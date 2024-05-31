@@ -90,16 +90,55 @@
         border-radius:40px;
     }
 }
-
+.form
+{
+    position:absolute;
+    text-align:left;
+    background-color:color.$richBlack;
+    padding:30px;
+    width:30%;
+    top:50px;
+    border-radius:30px;
+    right:20px;
+    &__name-entry
+    {
+        @include flexContainer();
+    }
+    &__inputs
+    {
+        width:100%;
+        border-radius:10px;
+        height:40px;
+        margin:30px;
+        @include texts($color: color.$richBlack);
+    }
+    &__textarea
+    {
+        width:100%;
+        border-radius:10px;
+        height:150px;
+        margin:30px;
+        @include texts($color: color.$richBlack);
+    }
+}
 .map
 {
+    height:75vh;
+    overflow:hidden;
     @include width();
     text-align:center;
     &__image
     {
         @include width();
+        margin-top:-200px;
+        
     }
 }
 
-
+.endPage-links
+{
+    @include flexContainer();
+    @include width($width:40%);
+    margin-top:50px;
+}
 
