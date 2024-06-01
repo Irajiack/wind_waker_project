@@ -16,6 +16,10 @@
         display:inline-block;
         margin:1%;
     }
+    &__icon-menu
+    {
+        display:none;
+    }
 }
 
 .logo
@@ -41,9 +45,51 @@
     align-content: space-between;  
     width:100%; 
     grid-template-columns: repeat(7, 14% [col-start]);
-
-    &__item1
+    grid-template-rows: repeat(4, 24% [row-start]);
+    
+    &__image
     {
-        padding:1.2%;
+        @include width($width:100%);
+    }
+    &__item
+    {
+        margin:5px;
+    }
+    &__item-a
+    {
+        grid-column-start: 3;
+        grid-column-end: span 3;
+        grid-row-start: 1;
+        grid-row-end: span 2;
+    }
+    &__item-b
+    {
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        grid-row-start: 2;
+        grid-row-end: span 2;
+    }
+    &__item-c
+    {
+        grid-column-start: 3;
+        grid-row-start: 3;
+    }
+    &__item-d
+    {
+        grid-column-start: 4;
+        grid-column-end: span 3;
+        grid-row-start: 3;
+        grid-row-end: span 2;
+    }
+    &__item-e
+    {
+        grid-column-start: 6;
+        grid-row-start: 2;
+    }
+    &__item-f
+    {
+        grid-column-start: 7;
+        grid-row-start: 2;
+        grid-row-end: span 2;
     }
 }

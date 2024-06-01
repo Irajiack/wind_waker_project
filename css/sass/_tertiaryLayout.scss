@@ -68,6 +68,10 @@
         @include width();
         @include margin($marginTop:80px, $marginBottom:40px);
     }
+    &__image
+    {
+        @include width();
+    }
 }
 
 .cards
@@ -95,11 +99,12 @@
     position:absolute;
     text-align:left;
     background-color:color.$richBlack;
-    padding:30px;
+    padding:15px;
     width:30%;
     top:50px;
     border-radius:30px;
     right:20px;
+
     &__name-entry
     {
         @include flexContainer();
@@ -111,6 +116,15 @@
         height:40px;
         margin:30px;
         @include texts($color: color.$richBlack);
+        outline:0;
+        &--success
+        {
+            border-color:color.$kellyGreen;
+        }
+        &--error
+        {
+            color:color.$rust
+        }
     }
     &__textarea
     {
@@ -119,6 +133,15 @@
         height:150px;
         margin:30px;
         @include texts($color: color.$richBlack);
+        outline:0;
+    }
+    &__error-message
+    {
+        @include texts($color: color.$rust, $fontSize:1.3rem);
+    }
+    &__success-message
+    {
+        @include texts($color: color.$kellyGreen, $fontSize:1.3rem);
     }
 }
 .map

@@ -6,7 +6,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #040814;
-  max-width: 100%;
+  width: 100%;
 }
 
 header {
@@ -40,7 +40,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -67,6 +67,9 @@ section {
   display: inline-block;
   margin: 1%;
 }
+.main-nav__icon-menu {
+  display: none;
+}
 
 .logo {
   width: 15%;
@@ -86,9 +89,44 @@ section {
   align-content: space-between;
   width: 100%;
   grid-template-columns: repeat(7, 14% [col-start]);
+  grid-template-rows: repeat(4, 24% [row-start]);
 }
-.grid__item1 {
-  padding: 1.2%;
+.grid__image {
+  width: 100%;
+}
+.grid__item {
+  margin: 5px;
+}
+.grid__item-a {
+  grid-column-start: 3;
+  grid-column-end: span 3;
+  grid-row-start: 1;
+  grid-row-end: span 2;
+}
+.grid__item-b {
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  grid-row-start: 2;
+  grid-row-end: span 2;
+}
+.grid__item-c {
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
+.grid__item-d {
+  grid-column-start: 4;
+  grid-column-end: span 3;
+  grid-row-start: 3;
+  grid-row-end: span 2;
+}
+.grid__item-e {
+  grid-column-start: 6;
+  grid-row-start: 2;
+}
+.grid__item-f {
+  grid-column-start: 7;
+  grid-row-start: 2;
+  grid-row-end: span 2;
 }
 
 /* ============================================= TERTIARY LAYOUT ================================================ */
@@ -172,6 +210,9 @@ section {
   margin-right: 20px;
   margin-bottom: 40px;
 }
+.statistics__image {
+  width: 100%;
+}
 
 .cards {
   display: flex;
@@ -201,7 +242,7 @@ section {
   position: absolute;
   text-align: left;
   background-color: #040814;
-  padding: 30px;
+  padding: 15px;
   width: 30%;
   top: 50px;
   border-radius: 30px;
@@ -226,6 +267,13 @@ section {
   margin: 10px 0 10px 0;
   font-weight: 600;
   text-align: left;
+  outline: 0;
+}
+.form__inputs--success {
+  border-color: #68B940;
+}
+.form__inputs--error {
+  color: #C03F1F;
 }
 .form__textarea {
   width: 100%;
@@ -235,6 +283,23 @@ section {
   color: #040814;
   font-family: "Cormorant";
   font-size: 1.6rem;
+  margin: 10px 0 10px 0;
+  font-weight: 600;
+  text-align: left;
+  outline: 0;
+}
+.form__error-message {
+  color: #C03F1F;
+  font-family: "Cormorant";
+  font-size: 1.3rem;
+  margin: 10px 0 10px 0;
+  font-weight: 600;
+  text-align: left;
+}
+.form__success-message {
+  color: #68B940;
+  font-family: "Cormorant";
+  font-size: 1.3rem;
   margin: 10px 0 10px 0;
   font-weight: 600;
   text-align: left;
@@ -565,7 +630,7 @@ h5, h6 {
   display: inline;
   cursor: pointer;
 }
-.buttons .buttons:hover::after, .buttons .buttons:hover::before, .buttons .buttons__inner::after, .buttons .buttons__inner::before {
+.buttons .buttons__inner::after, .buttons .buttons__inner::before {
   display: inline-block;
   position: absolute;
   content: "";
@@ -576,7 +641,7 @@ h5, h6 {
   background-size: contain;
   background-repeat: no-repeat;
 }
-.buttons .buttons:hover, .buttons .buttons__inner {
+.buttons .buttons__inner {
   background-position: center;
   background-size: 100% 62px;
   background-repeat: no-repeat;
@@ -596,6 +661,16 @@ h5, h6 {
 .buttons__inner::after {
   background-image: url(../../pictures/interface/Buttons_Right.png);
 }
+.buttons__inner:hover {
+  background-image: url(../../pictures/interface/Buttons_Hover_Middle.png) !important;
+}
+.buttons__inner:hover::before {
+  background-image: url(../../pictures/interface/Buttons_Hover_Left.png) !important;
+  right: 100%;
+}
+.buttons__inner:hover::after {
+  background-image: url(../../pictures/interface/Buttons_Hover_Right.png) !important;
+}
 .buttons__text {
   display: inline-block;
   color: #EAE8E3;
@@ -606,16 +681,6 @@ h5, h6 {
   text-align: center;
   min-width: 172px;
   padding: 0 15px 0 15px;
-}
-.buttons:hover {
-  background-image: url(../../pictures/interface/Buttons_Hover_Middle.png);
-}
-.buttons:hover::before {
-  background-image: url(../../pictures/interface/Buttons_Hover_Left.png);
-  right: 100%;
-}
-.buttons:hover::after {
-  background-image: url(../../pictures/interface/Buttons_Hover_Right.png);
 }
 .buttons--marginLeft-50px {
   margin-top: 20px;
@@ -628,4 +693,84 @@ h5, h6 {
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
+}
+
+input[type=submit] {
+  color: #EAE8E3;
+  font-family: "Cormorant";
+  font-size: 1.6rem;
+  margin: 10px 0 10px 0;
+  font-weight: 600;
+  text-align: left;
+  background-color: #040814;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #5078FE;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  border: 2px solid #EBD531;
+}
+
+@media screen and (max-width: 910px) {
+  header {
+    width: 100%;
+  }
+  .main-container {
+    padding: 20px;
+    width: 100%;
+  }
+  .main-nav {
+    width: 100%;
+  }
+  .main-nav__list {
+    display: none;
+  }
+  .main-nav__icon-menu {
+    display: block;
+    text-align: right;
+  }
+  .main-nav__icon-menu:hover {
+    text-align: right;
+  }
+  .logo {
+    width: 50%;
+    margin-left: 10px;
+  }
+  .statistics {
+    display: block;
+  }
+  .secondary-section__banner {
+    display: block;
+  }
+  .secondary-section__cards {
+    display: block;
+  }
+  .cards {
+    display: block;
+  }
+  .map {
+    height: 100%;
+    overflow: visible;
+  }
+  .map__image {
+    width: 100%;
+    margin-top: 0;
+  }
+  .form {
+    position: relative;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .form__name-entry {
+    display: block;
+  }
+  .endPage-links {
+    display: block;
+  }
+  .footer {
+    max-width: 100%;
+    display: block;
+    padding: 20px;
+  }
 }

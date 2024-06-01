@@ -10,19 +10,23 @@
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://kit.fontawesome.com/8f56361c7f.css" crossorigin="anonymous">
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> 
+    <script src="javascript/validation.js"></script>
 </head>
 <body>
   <a class="links--screen-reader" href="#main_content">Aller au contenu principal</a>
     <header>
-        <img class="logo" src="pictures/interface/logo.png" role="banner">
+        <img class="logo" src="pictures/interface/logo.png" role="banner" tabindex="0">
         <nav class="main-nav" role="navigation">
             <ul class="main-nav__list" role="list">
-                <li class="main-nav__list-item" role="listitem"><a href="#main_content" class="links links--main-nav"><i class="fa-duotone fa-books"></i> La légende <i class="fa-duotone fa-chevrons-down"></i></a></li>
-                <li class="main-nav__list-item" role="listitem"><a href="#secondarySection" class="links links--main-nav"><i class="fa-duotone fa-images"></i> Section 2 <i class="fa-duotone fa-chevrons-down"></i></a></li>
-                <li class="main-nav__list-item" role="listitem"><a href="" class="links links--main-nav"><i class="fa-duotone fa-face-angry-horns"></i> Les ennemis</a></li>
-                <li class="main-nav__list-item" role="listitem"><a href="" class="links links--main-nav"><i class="fa-duotone fa-map-location-dot"></i> La map</a></li>
+                <li class="main-nav__list-item" role="listitem"><a href="#main_content" class="links links--main-nav" tabindex="0"> <i class="fa-duotone fa-books"></i> Section 1 <i class="fa-duotone fa-chevrons-down"></i></a></li>
+                <li class="main-nav__list-item" role="listitem"><a href="#secondarySection" class="links links--main-nav" tabindex="0"><i class="fa-duotone fa-images"></i> Section 2 <i class="fa-duotone fa-chevrons-down"></i></a></li>
+                <li class="main-nav__list-item" role="listitem"><a href="#section3" class="links links--main-nav" tabindex="0"><i class="fa-duotone fa-face-angry-horns"></i> Section 3</a></li>
+                <li class="main-nav__list-item" role="listitem"><a href="#section4" class="links links--main-nav" tabindex="0"><i class="fa-duotone fa-map-location-dot"></i> Section 4</a></li>
             </ul>
+            <a href="#" class="links links--main-nav main-nav__icon-menu" role="navigation">
+              <i class="fa-solid fa-bars " role="navigation"></i>
+            </a>
+            
         </nav>
     </header>
 
@@ -177,9 +181,14 @@
             <div class="separators" role="separator">
               <img src="pictures/interface/separtor.png" class="separators__image" alt="Image de séparation entre les différente section. L'image afficher est le synbole d'Hyrule/La famille royale en doré avec la Mater Sword de chaque côté, le bout pointu de l'épée pointé vers le synbole d'Hyrule.">
             </div>
-            <section>
+            <section ID="section3">
               <div class="grid">
-                <div class="grid-item item-a"><img src="" class="width100" alt=""></div>
+                <div class="grid__item grid__item-a"><img src="pictures/gallery/item_a.png" class="grid__image" alt="A blue picture with the word Placeholder followed by a heart are written on it. No but seriously... is the tiny note in the bottom right corner."></div>
+                <div class="grid__item grid__item-b"><img src="pictures/gallery/item_b.png" class="grid__image" alt="A turquoise colored picture with the work Placeholder ! written on it. The bottom right note says Yes again..."></div>
+                <div class="grid__item grid__item-c"><img src="pictures/gallery/item_c.png" class="grid__image" alt="A red picture with Placeholder followed by a smiley face is displayed here with the bottom right note saying : Why are you like this grid."></div>
+                <div class="grid__item grid__item-d"><img src="pictures/gallery/item_d.png" class="grid__image" alt="A purple picture is displayed with the words Another One! Shown and a little earth. The bottom right note read as following: No but seriously this grid is killing my last braincell."></div>
+                <div class="grid__item grid__item-e"><img src="pictures/gallery/item_e.png" class="grid__image" alt="The fifth placeholder image is a green background with the words: Yay another placeholder! are written. The bottom right corner says: Geez how many are there? "></div>
+                <div class="grid__item grid__item-f"><img src="pictures/gallery/item_f.png" class="grid__image" alt="The last placeholder image is orange with the word LONG! written on it in a vertical display. The bottom right corner note says : Finally the last one."></div>
               </div>
             </section>
             <div class="separators" role="separator">
@@ -188,7 +197,7 @@
             <section>
               <div class="statistics">
                 <div class="statistics__items">
-                  <img src="pictures/interface/piechart.png" alt="Un diagramme circulaire affichant les copies vendu pour 5 des jeux de Legend of Zelda. Ocarina of Time: 7.6 million. Wind Waker (2002): 4.6 million. Zelda Wind Waker HD: 2.37 million. Twilight Princess: 8.85 million et Breath of the Wild : 31.85 million.">
+                  <img src="pictures/interface/piechart.png" class="statistics__image" alt="Un diagramme circulaire affichant les copies vendu pour 5 des jeux de Legend of Zelda. Ocarina of Time: 7.6 million. Wind Waker (2002): 4.6 million. Zelda Wind Waker HD: 2.37 million. Twilight Princess: 8.85 million et Breath of the Wild : 31.85 million.">
                 </div>
                 <div class="statistics__items">
                   <h2 class="header-2--centered">Statistics</h2>
@@ -207,6 +216,28 @@
                       </p>
                     </div>
                   </div>
+                  <div class="statistics__itemnized-list">
+                    <div class="statistics__items">
+                      <h3 class="header-3">7.6 million</h3>
+                      <p class="paragraphs">
+                        De copie vendu pour Zelda Ocarina of Time
+                      </p>
+                    </div>
+                    <div class="statistics__items">
+                      <h3 class="header-3">8.85 million</h3>
+                      <p class="paragraphs">
+                        de copie vendu pour Zelda Twilight Princess
+                      </p>
+                    </div>
+                  </div>
+                  <div class="statistics__itemnized-list">
+                    <div class="statistics__items">
+                      <h3 class="header-3">31.85 million</h3>
+                      <p class="paragraphs">
+                        De copie vendu pour Zelda Breath of the Wild
+                      </p>
+                    </div>
+                  </div>
                   <div class='buttons buttons--statistics' tabindex="0" role="navigation">
                     <div class='buttons__inner'>
                       <div class='buttons__text'>
@@ -219,10 +250,10 @@
               
               
             </section>
-            <div class="separators" role="separator">
+            <div class="separators">
               <img src="pictures/interface/separtor.png" class="separators__image" alt="Image de séparation entre les différente section. L'image afficher est le synbole d'Hyrule/La famille royale en doré avec la Mater Sword de chaque côté, le bout pointu de l'épée pointé vers le synbole d'Hyrule.">
             </div>
-            <section>
+            <section ID="section3">
               <h2 class="header-2--centered">
                 Bosses
               </h2>
@@ -292,33 +323,43 @@
             <div class="separators" role="separator">
               <img src="pictures/interface/separtor.png" class="separators__image" alt="Image de séparation entre les différente section. L'image afficher est le synbole d'Hyrule/La famille royale en doré avec la Mater Sword de chaque côté, le bout pointu de l'épée pointé vers le synbole d'Hyrule.">
             </div>
-            <section>
+            <section ID="section4">
               <div class="map">
                 <img src="pictures/interface/map.png" class="map__image">
               </div>
               <div class="form">
-                <form action="confirmation.html" method="get">
+                <form name="form">
                   <h2 class="header-2">Formulaire</h2>
                   <p class="paragraphs--tiny">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam vero temporibus fugiat voluptatibus expedita? Odio excepturi ab libero autem a et, ullam iste quidem expedita tempora atque, consequuntur assumenda! Delectus.</p>
                   <div class="form__name-entry">
-                    <label for="familyName">
-                      <input type="text" name="familyName" class="form__inputs" placeholder="Nom de Famille" minlength="2" maxlength="16" required />
-                    </label>
-                    <label for="firstName">
-                      <input type="text" name="firstName" class="form__inputs" placeholder="Prénom" minlength="2" maxlength="16" required />
-                    </label>
-                  </div>
-                  <label for="email">
-                    <input type="email" name="email" class="form__inputs" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
-                  </label>
-                  <label for="message"><textarea id="review" name="message" rows="5" cols="35" placeholder="Message" class="form__textarea" required></textarea> </label>
-                  <div class='buttons buttons--statistics' tabindex="0" role="navigation" type="submit">
-                    <div class='buttons__inner'>
-                      <div class='buttons__text'>
-                        <p>Submit</p>
-                      </div>
+                    <div class="input-control">
+                      <label for="familyName">
+                        <input ID="familyName" type="text" name="familyName" class="form__inputs" placeholder="Nom de Famille" minlength="2" maxlength="16" />
+                      </label>
+                      <div ID="familyName_errorMessage" class="form__error-message"></div>
                     </div>
+                    <div class="input-control">
+                      <label for="firstName">
+                        <input ID="firstName" type="text" name="firstName" class="form__inputs" placeholder="Prénom" minlength="2" maxlength="16"/>
+                      </label>
+                      <div ID="firstName_errorMessage" class="form__error-message"></div>
+                    </div>
+                    
                   </div>
+                  <div class="input-control">
+                    <label for="email">
+                      <input ID="email" type="email" name="email" class="form__inputs" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+                    </label>
+                    <div ID="email_errorMessage" class="form__error-message"></div>
+                  </div>
+                  <div class="input-control">
+                    <label for="message">
+                      <textarea id="review" name="message" rows="5" cols="35" placeholder="Message" class="form__textarea"></textarea> 
+                    </label>
+                    <div ID="review_errorMessage" class="form__error-message"></div>
+                  </div>
+                  
+                  <input ID="form__button" type="submit" value="Submit" onclick="return validationForm()">
                 </form>
               </div>
             </section>
@@ -364,6 +405,6 @@
           <i class="fa-duotone fa-envelope"></i> <a class="links" href="mailto:cegep@troisriviere.com">cegep@troisriviere.com</a></p>
       </div>
     </footer>
-    <script src="sliderjavascript.js"></script>
+    <script src="javascript/sliderjavascript.js"></script>
 </body>
 </html>

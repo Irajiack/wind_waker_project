@@ -1,0 +1,87 @@
+@use 'mixin' as *;
+@use 'colors' as color;
+
+@media screen and (max-width:910px)
+{
+
+    header
+    {
+        width:100%;
+    }
+    .main-container
+    {
+        padding:20px;
+        width:100%;
+    }
+    .main-nav
+    {
+        width:100%;
+        &__list
+        {
+            display:none;
+        }
+        &__icon-menu
+        {
+            display:block;
+            text-align:right;
+            &:hover
+            {
+                text-align:right;
+            }
+        }
+    }
+    .logo
+    {
+        width:50%;
+        margin-left:10px;
+    }
+    .statistics
+    {
+        display:block;
+    }
+    .secondary-section
+    {
+        &__banner
+        {
+            display:block;
+        }
+        &__cards
+        {
+            display:block;
+        }
+    }
+    .cards
+    {
+        display:block;
+    }
+    .map
+    {
+        height:100%;
+        overflow:visible;
+        &__image
+        {
+            @include width($width:100%);
+            margin-top:0;
+        }
+    }
+    .form
+    {
+        position:relative;
+        width:100%;
+        margin-bottom:50px;
+        &__name-entry
+        {
+            display:block;
+        }
+    }
+    .endPage-links
+    {
+        display:block;
+    }
+    .footer
+    {
+        max-width:100%;
+        display:block;
+        padding:20px;
+    }
+}
