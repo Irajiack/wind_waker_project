@@ -15,7 +15,7 @@
 <body>
   <a class="links--screen-reader" href="#main_content">Aller au contenu principal</a>
     <header>
-        <img class="logo" src="pictures/interface/logo.png" role="banner" tabindex="0">
+        <img class="logo" src="pictures/interface/logo.png" tabindex="0" alt="Logo du jeu Zelda Wind Waker affichant le nom du jeu avec un bateau à tête de lion en arrière du texte.">
         <nav class="main-nav" role="navigation">
             <ul class="main-nav__list" role="list">
                 <li class="main-nav__list-item" role="listitem"><a href="#main_content" class="links links--main-nav" tabindex="0"> <i class="fa-duotone fa-books"></i> Section 1 <i class="fa-duotone fa-chevrons-down"></i></a></li>
@@ -23,8 +23,8 @@
                 <li class="main-nav__list-item" role="listitem"><a href="#section3" class="links links--main-nav" tabindex="0"><i class="fa-duotone fa-face-angry-horns"></i> Section 3</a></li>
                 <li class="main-nav__list-item" role="listitem"><a href="#section4" class="links links--main-nav" tabindex="0"><i class="fa-duotone fa-map-location-dot"></i> Section 4</a></li>
             </ul>
-            <a href="#" class="links links--main-nav main-nav__icon-menu" role="navigation">
-              <i class="fa-solid fa-bars " role="navigation"></i>
+            <a href="#main_content" class="links links--main-nav main-nav__icon-menu" tabindex="0">
+              <i class="fa-solid fa-bars"></i>
             </a>
             
         </nav>
@@ -33,7 +33,7 @@
     <main class="main-container" ID="main_content" role="main">
       <section>
         <h1 class="main-container--text-centered" tabindex="0">La légende de Zelda: Wind Waker</h1>  
-          <div class="legend-carousel" role="slider">
+          <div class="legend-carousel">
               <p class="legend-carousel--intro" tabindex="0">Il est une histoire mythique qu’on raconte, parmi tant d’autres légendes…</p>
               <div class="legend-carousel__indicators">
                 <div class="legend-carousel__buttons legend-carousel__buttons--active" ID="slider-1-indicators"></div>
@@ -133,8 +133,8 @@
             <section class="secondary-section" ID="secondarySection">
                 <p class="paragraphs--centeredTiny">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dignissimos cupiditate quos quasi at mollitia autem nihil.<br /> Repellendus numquam ad! Adipisci libero rem porro ut voluptate corporis quos recusandae magni?</p>
               <div class="textual-input">
-                <label for="randomInput_1">^
-                  <input type="text" name="randomInput_1" class="inputs" placeholder="Text input" />
+                <label for="randomInput_1">
+                  <input ID="randomInput_1" type="text" name="randomInput_1" class="inputs" placeholder="Text input" />
                 </label>
                 <div class='buttons buttons--marginLeft-50px' tabindex="0">
                   <div class='buttons__inner'>
@@ -162,17 +162,17 @@
               </p>
               <div class="secondary-section__cards">
                 <div class="secondary-section__items">
-                  <img src="pictures/interface/NayruPearl.png" class="secondary-section__items--images">
+                  <img src="pictures/interface/NayruPearl.png" class="secondary-section__items--images" alt="Image de la perle de la déesse Nayru. La perle est ronde et bleu avec le symbole de Nayru: 3 croissant de lune ce faisant do en formation de triangle avec un cercle dans le millieu des croissants de lune.">
                   <h3 class="header-3--centered">Perle de Nayru</h3>
                   <p class="paragraphs--centered">Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br /> Eveniet quidem impedit consequatur voluptatem vitae illo beatae dicta tempora!</p>
                 </div>
                 <div class="secondary-section__items">
-                  <img src="pictures/interface/FarorePearl.png" class="secondary-section__items--images">
+                  <img src="pictures/interface/FarorePearl.png" class="secondary-section__items--images" alt="Image de la perle de la déesse Farore. La perle est ronde et verte avec le symbole de Farore: Un petit cercle vert dans le milieu avec 2 croissant de lune qui l'entour, le premier croissant de lune étant plus petit que le second, les 3 symbole sont imbriqué.">
                   <h3 class="header-3--centered">Perle de Farore</h3>
                   <p class="paragraphs--centered">Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br /> Eveniet quidem impedit consequatur voluptatem vitae illo beatae dicta tempora!</p>
                 </div>
                 <div class="secondary-section__items">
-                  <img src="pictures/interface/DinPearl.png" class="secondary-section__items--images">
+                  <img src="pictures/interface/DinPearl.png" class="secondary-section__items--images" alt="Image de la perle de la déesse Din. La perle est orange avec le symbole de Din: 3 symbole en vague. Le premier symbole vagué fini avec un rond à l'extremité droite. Le symbole vagué du milieu fini en pointes autant a gauche que a droite et le dernier symbole vagué ce termine en cercle pointant vers le bas du côté gauche.">
                   <h3 class="header-3--centered">Perle de Din</h3>
                   <p class="paragraphs--centered">Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br /> Eveniet quidem impedit consequatur voluptatem vitae illo beatae dicta tempora!</p>
                 </div>
@@ -181,7 +181,8 @@
             <div class="separators" role="separator">
               <img src="pictures/interface/separtor.png" class="separators__image" alt="Image de séparation entre les différente section. L'image afficher est le synbole d'Hyrule/La famille royale en doré avec la Mater Sword de chaque côté, le bout pointu de l'épée pointé vers le synbole d'Hyrule.">
             </div>
-            <section ID="section3">
+            <section>
+              <h2 class="header-2--centered">Galerie</h2>
               <div class="grid">
                 <div class="grid__item grid__item-a"><img src="pictures/gallery/item_a.png" class="grid__image" alt="A blue picture with the word Placeholder followed by a heart are written on it. No but seriously... is the tiny note in the bottom right corner."></div>
                 <div class="grid__item grid__item-b"><img src="pictures/gallery/item_b.png" class="grid__image" alt="A turquoise colored picture with the work Placeholder ! written on it. The bottom right note says Yes again..."></div>
@@ -325,7 +326,7 @@
             </div>
             <section ID="section4">
               <div class="map">
-                <img src="pictures/interface/map.png" class="map__image">
+                <img src="pictures/interface/map.png" class="map__image" alt="Ici s'affiche une map du jeu La légende de Zelda : Wind Waker.">
               </div>
               <div class="form">
                 <form name="form">
@@ -353,8 +354,8 @@
                     <div ID="email_errorMessage" class="form__error-message"></div>
                   </div>
                   <div class="input-control">
-                    <label for="message">
-                      <textarea id="review" name="message" rows="5" cols="35" placeholder="Message" class="form__textarea"></textarea> 
+                    <label for="review">
+                      <textarea ID="review" name="review" rows="5" cols="35" placeholder="Message" class="form__textarea"></textarea> 
                     </label>
                     <div ID="review_errorMessage" class="form__error-message"></div>
                   </div>
@@ -367,8 +368,9 @@
               <img src="pictures/interface/separtor.png" class="separators__image" alt="Image de séparation entre les différente section. L'image afficher est le synbole d'Hyrule/La famille royale en doré avec la Mater Sword de chaque côté, le bout pointu de l'épée pointé vers le synbole d'Hyrule.">
             </div>
             <section>
-              <img src="pictures/interface/logo.png" class="logo" alt="Logo du jeu Zelda Wind Waker affichant le nom du jeu avec un bateau à tête de lion en arrière du texte."><br />
-
+              <h2>
+                <img src="pictures/interface/logo.png" class="logo" alt="Logo du jeu Zelda Wind Waker affichant le nom du jeu avec un bateau à tête de lion en arrière du texte."><br />
+              </h2>
               <div class="endPage-links">
                 <div>
                   <a href="#" class="links">About us</a>

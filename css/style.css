@@ -306,14 +306,12 @@ section {
 }
 
 .map {
-  height: 75vh;
-  overflow: hidden;
+  height: 100%;
   width: 100%;
   text-align: center;
 }
 .map__image {
   width: 100%;
-  margin-top: -200px;
 }
 
 .endPage-links {
@@ -488,8 +486,6 @@ h5, h6 {
 }
 .links--screen-reader {
   border: 0;
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: insert(50%);
   height: 1px;
   margin: -1px;
   overflow: hidden;
@@ -618,7 +614,6 @@ h5, h6 {
   margin-left: 3px;
   background-color: #fff;
   background-clip: padding-box;
-  border: 10px 0 0 10px solid transparent;
   opacity: 0.5;
   transition: opacity 0.6s ease;
 }
@@ -712,13 +707,29 @@ input[type=submit]:hover {
   border: 2px solid #EBD531;
 }
 
+@media screen and (max-width: 1500px) {
+  .cards {
+    display: block;
+  }
+  .form {
+    position: relative;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .form__name-entry {
+    display: block;
+  }
+}
 @media screen and (max-width: 910px) {
+  .textual-input {
+    display: block;
+  }
   header {
     width: 100%;
   }
   .main-container {
     padding: 20px;
-    width: 100%;
+    max-width: 100%;
   }
   .main-nav {
     width: 100%;
@@ -729,6 +740,7 @@ input[type=submit]:hover {
   .main-nav__icon-menu {
     display: block;
     text-align: right;
+    margin-right: 20px;
   }
   .main-nav__icon-menu:hover {
     text-align: right;
@@ -746,31 +758,12 @@ input[type=submit]:hover {
   .secondary-section__cards {
     display: block;
   }
-  .cards {
-    display: block;
-  }
-  .map {
-    height: 100%;
-    overflow: visible;
-  }
-  .map__image {
-    width: 100%;
-    margin-top: 0;
-  }
-  .form {
-    position: relative;
-    width: 100%;
-    margin-bottom: 50px;
-  }
-  .form__name-entry {
-    display: block;
-  }
   .endPage-links {
     display: block;
   }
   .footer {
-    max-width: 100%;
+    max-width: calc(100vw - 20px);
     display: block;
-    padding: 20px;
+    padding: 10px;
   }
 }

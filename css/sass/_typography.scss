@@ -85,8 +85,6 @@ h5, h6
     &--screen-reader
     {
         border:0;
-        clip: rect(1px, 1px, 1px, 1px);
-        clip-path: insert(50%);
         height:1px;
         margin:-1px;
         overflow:hidden;

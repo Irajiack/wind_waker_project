@@ -1,9 +1,29 @@
 @use 'mixin' as *;
 @use 'colors' as color;
 
+@media screen and (max-width:1500px)
+{
+    .cards
+    {
+        display:block;
+    }
+    .form
+    {
+        position:relative;
+        width:100%;
+        margin-bottom:50px;
+        &__name-entry
+        {
+            display:block;
+        }
+    }
+}
 @media screen and (max-width:910px)
 {
-
+    .textual-input
+    {
+        display:block;
+    }
     header
     {
         width:100%;
@@ -11,7 +31,7 @@
     .main-container
     {
         padding:20px;
-        width:100%;
+        max-width:100%;
     }
     .main-nav
     {
@@ -20,10 +40,12 @@
         {
             display:none;
         }
+        
         &__icon-menu
         {
             display:block;
             text-align:right;
+            margin-right:20px;
             &:hover
             {
                 text-align:right;
@@ -50,38 +72,14 @@
             display:block;
         }
     }
-    .cards
-    {
-        display:block;
-    }
-    .map
-    {
-        height:100%;
-        overflow:visible;
-        &__image
-        {
-            @include width($width:100%);
-            margin-top:0;
-        }
-    }
-    .form
-    {
-        position:relative;
-        width:100%;
-        margin-bottom:50px;
-        &__name-entry
-        {
-            display:block;
-        }
-    }
     .endPage-links
     {
         display:block;
     }
     .footer
     {
-        max-width:100%;
+        max-width:calc(100vw - 20px);
         display:block;
-        padding:20px;
+        padding:10px;
     }
 }
