@@ -1,0 +1,82 @@
+$breakpoints: (
+    'fine': "(min-width: 480px)",
+    'diminutive': "(min-width: 640px)", // Tailwind sm
+    'tiny': "(min-width: 768px)", // Tailwind md
+    'small': "(min-width: 1024px)", // Tailwind lg
+    'medium': "(min-width: 1280px)", // Tailwind xl
+    'large': "(min-width: 1536px)", // Tailwind 2xl
+    'huge': "(min-width: 1920px)", // Ira's main screen
+    'gargantan': "(min-width: 2560px)",
+    'colossal': "(min-width: 3840px)",
+);
+
+$p-font-sizes: (
+  null  : 1.15rem,
+  fine : 1.15rem,
+  diminutive: 1.25rem,
+  tiny : 1.3rem,
+  small : 1.45rem,
+  medium : 1.5rem,
+);
+$h1-font-sizes: (
+  null  : 4.125rem,
+  fine : 4.25rem,
+  diminutive: 4.5rem,
+  tiny : 4.875rem,
+  small : 5.25rem,
+);
+
+$h2-font-sizes: (
+  null  : 4rem,
+  fine : 4.125rem,
+  diminutive: 4.25rem,
+  tiny : 4.5rem,
+  small : 4.875rem,
+);
+$h3-font-sizes: (
+  null  : 1.125rem,
+  fine : 1.25rem,
+  diminutive: 1.5rem,
+  tiny : 1.85rem,
+  small : 2rem,
+);
+
+$h4-font-sizes: (
+  null  : 0.85rem,
+  fine : 1rem,
+  diminutive: 1.125rem,
+  tiny : 1.25rem,
+  small : 1.5rem,
+);
+
+$icons-font-sizes: (
+  null  : 2rem,
+  fine : 2.125rem,
+  diminutive: 2.25rem,
+  tiny : 2.5rem,
+  small : 2.875rem,
+);
+
+
+$white: #fff;
+$platinum:#EAE8E3;
+$richBlack:#040814;
+$night90: rgba(10, 10, 10, 0.75);
+$citrine:#EBD531;
+$kellyGreen:#68B940;
+$pear:#C2EB3B;
+$rust:#C03F1F;
+$blue:#5078FE;
+$blue60: rgba(80, 120, 254, 0.60);
+
+$font-family: (
+  CrimsonText: (
+    fontFamily: "CrimsonText",
+  ),
+  philosopher: (
+    fontFamily: "Philosopher",
+  ),
+  tangerine: (
+    fontFamily: "Tangerine",
+  ),
+);

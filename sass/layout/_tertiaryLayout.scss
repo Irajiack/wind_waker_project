@@ -1,0 +1,217 @@
+/* ============================================= TERTIARY LAYOUT ================================================ */
+@use '../variables' as *;
+@use "../abstracts" as *;
+
+.secondary-section
+{
+    padding:30px;
+
+    &__banner
+    {
+        display:block;
+        @include respond-to('small') 
+        {
+            display:flex;
+            justify-content:space-around;
+        }
+        width:100%;
+        background-color:$blue60;
+        align-items:center;
+        padding:10px;
+        margin:30px 0 30px 0;
+    }
+
+    &__cards
+    {
+        @include grid($Gap:2rem);
+        width:100%;
+        margin-top:60px;
+    }
+    &__items
+    {
+        @include grid_items(12);
+        @include respond-to('medium') 
+        {
+            @include grid_items(4);
+        }
+        &--images
+        {
+            @include width($width: 15%);
+        }
+    }
+}
+
+.statistics
+{
+    @include flexContainer($flexDirection:column-reverse);
+
+    @include respond-to('medium') 
+    {
+        flex-direction:row;
+    }
+
+    width:100%;
+    max-width:100%;
+    margin-bottom:60px;
+
+    &__items
+    {
+        @include flexContainer__items();
+        text-align:center;
+        margin:15px;
+    }
+    &__itemnized-list
+    {
+        @include flexContainer($justifyContent:flex-start);
+        @include width();
+    }
+    &__image
+    {
+        @include width();
+    }
+}
+
+.cards
+{
+    @include grid();
+
+    &__items
+    {
+        @include grid_items(12);
+        @include respond-to('small') 
+        {
+            @include grid_items(6);
+        }
+        @include respond-to('medium') 
+        {
+            @include grid_items(4);
+        }
+        
+        @include margin();
+        text-align:center;
+        padding:20px;
+        border:25px solid transparent;
+        border-image: url(../pictures/interface/SquareBorderGold.png) 60 stretch;
+    }
+    &__placeholder
+    {
+        display:none;
+        @include grid_items(12);
+
+        @include respond-to('medium') 
+        {
+            @include grid_items(4);
+            display:block;
+        }
+    }
+    &__picture
+    {
+        border-radius:40px;
+    }
+}
+.form
+{
+    position:relative;
+    width:100%;
+    margin-bottom:50px;
+    @include respond-to('small') 
+    {
+        padding:5px;
+    }
+    &__name-entry
+    {
+        display:block;
+    }
+
+    text-align:left;
+    background-color:$richBlack;
+    
+    border-radius:30px;
+
+    @include respond-to('large') 
+    {
+        position:absolute;
+        width:30%;
+        top:50px;
+        right:20px;
+        margin-bottom:0;
+        padding:15px;
+    }
+
+    &__name-entry
+    {
+        @include respond-to('huge') 
+        {
+            @include flexContainer();
+        }
+        
+    }
+    &__inputs
+    {
+        width:100%;
+        border-radius:10px;
+        height:40px;
+        margin:30px;
+        @include texts($color: $richBlack);
+        outline:0;
+        &--success
+        {
+            border-color:$kellyGreen;
+        }
+        &--error
+        {
+            color:$rust
+        }
+    }
+    &__textarea
+    {
+        width:100%;
+        border-radius:10px;
+        height:150px;
+        margin:30px;
+        @include texts($color: $richBlack);
+        outline:0;
+    }
+    &__error-message
+    {
+        @include texts($color: $rust);
+    }
+    &__success-message
+    {
+        @include texts($color: $kellyGreen);
+    }
+
+}
+.map
+{
+    height:100%;
+    @include width();
+    text-align:center;
+    &__image
+    {
+        @include width();
+    }
+}
+
+.endPage-links
+{
+    @include flexContainer($flexWrap:wrap);
+    width:100%;
+    text-align:center;
+    margin-top:50px;
+
+    @include respond-to('small') 
+    {
+        width:75%;
+        flex-wrap:nowrap;
+    }
+    @include respond-to('large') 
+    {
+        width:50%;
+    }
+    @include respond-to('huge') 
+    {
+        width:45%;
+    }
+}
+

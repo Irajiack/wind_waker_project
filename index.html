@@ -6,20 +6,21 @@
     <meta name="author" content="Camille Élisabeth Bleau (AKA: Irajiack)" />
     <meta name="copyright" content="Camille Élisabeth Bleau (AKA: Irajiack)">
     <title>La légende de Zelda: Wind Waker</title>
-    <link rel="shortcut icon" type="image/png" href="pictures/interface/favicon.png"/>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="src/pictures/interface/favicon.png"/>
+    <link rel="stylesheet" href="src/css/normalize.css">
+    <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="https://kit.fontawesome.com/8f56361c7f.css" crossorigin="anonymous">
-    <script src="javascript/validation.js"></script>
+    <script src="src/javascript/validation.js"></script>
 </head>
 <body>
+
   <a class="links--screen-reader" href="#main_content">Aller au contenu principal</a>
     <header>
-        <img class="logo" src="pictures/interface/logo.png" tabindex="0" alt="Logo du jeu Zelda Wind Waker affichant le nom du jeu avec un bateau à tête de lion en arrière du texte.">
+        <img class="logo" src="src/pictures/interface/logo.png" tabindex="0" alt="Logo du jeu Zelda Wind Waker affichant le nom du jeu avec un bateau à tête de lion en arrière du texte.">
         <nav class="main-nav" role="navigation">
             <ul class="main-nav__list" role="list">
-                <li class="main-nav__list-item" role="listitem"><a href="#main_content" class="links links--main-nav" tabindex="0"> <i class="fa-duotone fa-books"></i> Section 1 <i class="fa-duotone fa-chevrons-down"></i></a></li>
-                <li class="main-nav__list-item" role="listitem"><a href="#secondarySection" class="links links--main-nav" tabindex="0"><i class="fa-duotone fa-images"></i> Section 2 <i class="fa-duotone fa-chevrons-down"></i></a></li>
+                <li class="main-nav__list-item" role="listitem"><a href="#main_content" class="links links--main-nav" tabindex="0"> <i class="fa-duotone fa-books"></i> Section 1</a></li>
+                <li class="main-nav__list-item" role="listitem"><a href="#secondarySection" class="links links--main-nav" tabindex="0"><i class="fa-duotone fa-images"></i> Section 2</a></li>
                 <li class="main-nav__list-item" role="listitem"><a href="#section3" class="links links--main-nav" tabindex="0"><i class="fa-duotone fa-face-angry-horns"></i> Section 3</a></li>
                 <li class="main-nav__list-item" role="listitem"><a href="#section4" class="links links--main-nav" tabindex="0"><i class="fa-duotone fa-map-location-dot"></i> Section 4</a></li>
             </ul>
@@ -32,7 +33,7 @@
 
     <main class="main-container" ID="main_content" role="main">
       <section>
-        <h1 class="main-container--text-centered" tabindex="0">La légende de Zelda: Wind Waker</h1>  
+        <h1 class="centered" tabindex="0">La légende de Zelda: Wind Waker</h1>  
           <div class="legend-carousel">
               <p class="legend-carousel--intro" tabindex="0">Il est une histoire mythique qu’on raconte, parmi tant d’autres légendes…</p>
               <div class="legend-carousel__indicators">
@@ -50,18 +51,18 @@
                 </div>
                 <div class="legend-carousel__inner--centered">
                   <div class="legend-carousel__item legend-carousel__item--active" ID="slider-1" data-nextSlider="slider-2" data-previousSlider="slider-6">
-                    <img src="pictures/legend/display_1.png" class="legend-carousel__item--pictures" alt="Premième image du prologue du jeu The Legend of Zelda : Wind Waker, redissiner. Sur la gauche il y a un text en hyrulien en d'oré. A droite une image montrant le château d'hyrule, un paysage de montagnes, d'arbres et de nuages. 1 des petiut personnage a une jar qu'il transporte sur sa tête, le second à un rateau pour labourer la terre, un cheval ce trouve en front de page et sur la droite du cheval il y a un troisième personnage (Goron)">
+                    <img src="src/pictures/legend/display_1.png" class="legend-carousel__item--pictures" alt="Premième image du prologue du jeu The Legend of Zelda : Wind Waker, redissiner. Sur la gauche il y a un text en hyrulien en d'oré. A droite une image montrant le château d'hyrule, un paysage de montagnes, d'arbres et de nuages. 1 des petiut personnage a une jar qu'il transporte sur sa tête, le second à un rateau pour labourer la terre, un cheval ce trouve en front de page et sur la droite du cheval il y a un troisième personnage (Goron)">
                     <div class="legend-carousel__captions">
-                        <p class="legend-carousel__captions--text-centered" tabindex="0" ID="slider-1-caption">
+                        <p class="legend-carousel__captions centered" tabindex="0" ID="slider-1-caption">
                           Il y a bien longtemps, existait un royaume où l’on disait cachés les pouvoirs des Dieux.<br /> 
                           C’était une province splendide, verdoyante et fertile.
                         </p>
                     </div>
                   </div>
                   <div class="legend-carousel__item" ID="slider-2" data-nextSlider="slider-3" data-previousSlider="slider-1">
-                    <img src="pictures/legend/display_2.png" class="legend-carousel__item--pictures" alt="Image bleu affichant le mot 'Placeholder'">
+                    <img src="src/pictures/legend/display_2.png" class="legend-carousel__item--pictures" alt="Image bleu affichant le mot 'Placeholder'">
                     <div class="legend-carousel__captions">
-                        <p class="legend-carousel__captions--text-centered" tabindex="0" ID="slider-2-caption">
+                        <p class="legend-carousel__captions centered" tabindex="0" ID="slider-2-caption">
                           Mais un beau jour, l’attention d’un être maléfique se porta sur ce Royaume. Et il déroba les pouvoirs des Dieux.<br />
                           Ses forces maléfiques plongèrent la province dans les Ténèbres.<br />
                           Alors que le sort du Royaume semblait scellé…
@@ -69,27 +70,27 @@
                     </div>
                   </div>
                   <div class="legend-carousel__item" ID="slider-3" data-nextSlider="slider-4" data-previousSlider="slider-2">
-                    <img src="pictures/legend/display_3.png" class="legend-carousel__item--pictures" alt="Image bleu affichant le mot 'Placeholder'">
+                    <img src="src/pictures/legend/display_3.png" class="legend-carousel__item--pictures" alt="Image bleu affichant le mot 'Placeholder'">
                     <div class="legend-carousel__captions">
-                        <p class="legend-carousel__captions--text-centered" tabindex="0" ID="slider-3-caption">
+                        <p class="legend-carousel__captions centered" tabindex="0" ID="slider-3-caption">
                           ...Un jeune homme, tout de vert vêtu, surgit de nulle part.<br />
                           Il brandit son épée magique, fit taire l'être maléfique, et ramena la lumière dans la province.
                         </p>
                     </div>
                   </div>
                     <div class="legend-carousel__item" ID="slider-4" data-nextSlider="slider-5" data-previousSlider="slider-3">
-                      <img src="pictures/legend/display_4.png" class="legend-carousel__item--pictures" alt="Image bleu affichant le mot 'Placeholder'">
+                      <img src="src/pictures/legend/display_4.png" class="legend-carousel__item--pictures" alt="Image bleu affichant le mot 'Placeholder'">
                       <div class="legend-carousel__captions">
-                          <p class="legend-carousel__captions--text-centered" tabindex="0" ID="slider-4-caption">
+                          <p class="legend-carousel__captions centered" tabindex="0" ID="slider-4-caption">
                             Le peuple du royaume appela ce jeune homme qui avait traversé le temps pour lui ramener la lumière le <i class="fa-duotone fa-angles-left"></i>Héros du temps<i class="fa-duotone fa-angles-right"></i>.<br />
                             l'histoire du jeune garçon se transmit de génération en génération, jusqu'à devenir une légende...
                           </p>
                       </div>
                     </div>
                     <div class="legend-carousel__item" ID="slider-5" data-nextSlider="slider-6" data-previousSlider="slider-4">
-                      <img src="pictures/legend/display_5.png" class="legend-carousel__item--pictures" alt="Image bleu affichant le mot 'Placeholder'">
+                      <img src="src/pictures/legend/display_5.png" class="legend-carousel__item--pictures" alt="Image bleu affichant le mot 'Placeholder'">
                       <div class="legend-carousel__captions">
-                          <p class="legend-carousel__captions--text-centered" tabindex="0" ID="slider-5-caption">
+                          <p class="legend-carousel__captions centered" tabindex="0" ID="slider-5-caption">
                             Quand un jour un nouveau malheur s'abattit sur le royaume.<br />
                             l'être maléfique que le Héros semblais avoir réduit au silence...<br />
                             ressurgit soudainement du plus profond de la terre.
@@ -97,9 +98,9 @@
                       </div>
                     </div>
                       <div class="legend-carousel__item" ID="slider-6" data-nextSlider="slider-7" data-previousSlider="slider-5">
-                        <img src="pictures/legend/display_6.png" class="legend-carousel__item--pictures" alt="Image bleu affichant le mot 'Placeholder'">
+                        <img src="src/pictures/legend/display_6.png" class="legend-carousel__item--pictures" alt="Image bleu affichant le mot 'Placeholder'">
                         <div class="legend-carousel__captions">
-                          <p class="legend-carousel__captions--text-centered" tabindex="0" ID="slider-6-caption">
+                          <p class="legend-carousel__captions centered" tabindex="0" ID="slider-6-caption">
                             Le peuple voulut croire que le Héros viendrait à nouveau à son secours.<br />
                             Mais... le Héros de réparut point.<br /><br />
                             Et face aux forces maléfiques, le peuple n'eut d'autre recours que la prière.<br />
@@ -110,9 +111,9 @@
                         </div>
                       </div>
                       <div class="legend-carousel__item" ID="slider-7" data-nextSlider="slider-1" data-previousSlider="slider-6">
-                        <img src="pictures/legend/display_7.png" class="legend-carousel__item--pictures" alt="Image bleu affichant le mot 'Placeholder'">
+                        <img src="src/pictures/legend/display_7.png" class="legend-carousel__item--pictures" alt="Image bleu affichant le mot 'Placeholder'">
                         <div class="legend-carousel__captions">
-                          <p class="legend-carousel__captions--text-centered " tabindex="0" ID="slider-7-caption">
+                          <p class="legend-carousel__captions centered " tabindex="0" ID="slider-7-caption">
                             Si aucun souvenir de la province ne remeure, le souffle de la légende ne s'est pas encore tout à fait tu.<br />
                             Et dans une petite île, on continue de fêter le jour où les garçons atteignent les douze ans en leur faisant revêtir un habit vert.<br /><br />
                             Le coeur frais comme le vent des prairies, ils font alors siffler leurs lames comme en un tourbillon pour briser les ténèbres.<br />
@@ -128,82 +129,69 @@
               </div>
             </section>
             <div class="separators" role="separator">
-              <img src="pictures/interface/separtor.png" class="separators__image" alt="Image de séparation entre les différente section. L'image afficher est le synbole d'Hyrule/La famille royale en doré avec la Mater Sword de chaque côté, le bout pointu de l'épée pointé vers le synbole d'Hyrule.">
+              <img src="src/pictures/interface/separtor.png" class="separators__image" alt="Image de séparation entre les différente section. L'image afficher est le synbole d'Hyrule/La famille royale en doré avec la Mater Sword de chaque côté, le bout pointu de l'épée pointé vers le synbole d'Hyrule.">
             </div>
             <section class="secondary-section" ID="secondarySection">
-                <p class="paragraphs--centeredTiny">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dignissimos cupiditate quos quasi at mollitia autem nihil.<br /> Repellendus numquam ad! Adipisci libero rem porro ut voluptate corporis quos recusandae magni?</p>
-              <div class="textual-input">
-                <label for="randomInput_1">
-                  <input ID="randomInput_1" type="text" name="randomInput_1" class="inputs" placeholder="Text input" />
-                </label>
-                <div class='buttons buttons--marginLeft-50px' tabindex="0">
-                  <div class='buttons__inner'>
-                      <div class='buttons__text'>
-                        <p>Button</p>
-                      </div>
-                  </div>
-                </div>
-              </div>
-
+              <p>
+                Après avoir pu constater le succès de la Dreamcast de Sega et de la PS2 de Sony, Nintendo annonça qu'ils allaient sortir une nouvelle console, la Dolphin, qui fut annoncée le 3 mars 1999. Finalement, cette nouvelle console fut révélée le 24 août 2000, et le nom de Gamecube lui fut donné. En 2001, le prochain Zelda 3D, qui allait être The Wind Waker, fut annoncé. Les graphismes en cel-shading furent plus ou moins bien accueillis, et beaucoup de fans se plaignirent, car ils espéraient un Zelda réaliste pour cette nouvelle console. Miyamoto fut surpris par ces vives critiques, et par les exclamations de fans, qui pensaient que Nintendo avait décidé d'orienter ce jeu vers un plus jeune public. La première démo jouable, à l'E3 de 2002, fut une surprises pour beaucoup, qui apprécièrent le nouveau Gameplay, d'après ce qu'ils avaient pu entrapercevoir. IGN affirma que le style cartoon du jeu se prêtait plutôt bien au gameplay, et correspondait à l'idée que l'on peut se faire de la série des Zelda. Les premiers artworks, au même style que le jeu, inspirés de ceux de Four Swords sorti quelques temps avant, et développé par Flagship, furent comparés à ceux d'autres jeux, tel A Link to the Past. Finalement, le nom du jeu fut officialisé le 2 décembre 2002. Le jeu sortit quelques temps après, avec un écart de 5 mois entre la sortie la plus récente et celle la plus tardive, à savoir les sorties japonaises et australiennes respectivement. 
+              </p>
+              
               <div class="secondary-section__banner">
-                <p class="paragraphs">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br /> Dolorem dignissimos cupiditate quos quasi at mollitia autem nihil repellendus numquam ad!<br /> Adipisci libero rem porro ut voluptate corporis quos recusandae magni?</p>
-                <div class='buttons' tabindex="0">
-                  <div class='buttons__inner'>
-                      <div class='buttons__text'>
-                        <p>Button</p>
-                      </div>
-                  </div>
-                </div>
+                <p class="centeredTiny">
+                La chronologie de la série est dévoilée dans l'ouvrage <a href="https://fr.wikipedia.org/wiki/The_Legend_of_Zelda:_Hyrule_Historia">Hyrule Historia</a>. Selon Hyrule Historia, The Wind Waker se place dans la timeline de Link adulte, avec Phantom Hourglass et Spirit Tracks. The Wind Waker est le premier jeu de la timeline et suit Ocarina of Time. Suite à la défaite de Ganon dans Ocarina of Time, le héros du temps décide de retourner dans le passé (qui est sa véritable époque) laissant ainsi Hyrule du futur sans héros. 
+                </p>
               </div>
 
-              <h2 class="header-2--BigAndImportant">Gros texte important</h2>
-              <p class="paragraphs--centered">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quidem impedit consequatur voluptatem vitae illo beatae dicta tempora!<br /> Provident, optio placeat? Esse recusandae numquam fugiat eum beatae temporibus eligendi doloremque.
+              <h2 class="important_text">La Tour des Dieux</h2>
+              <p class="centered">
+                Cette tour n'apparaît que lorsque les trois perles (de Din, Farore et Nayru) sont placées sur les statues des déesses prévues à cet effet se trouvant sur trois îles triangulaires (du Nord, du Sud et de l'Est). Une fois que c'est fait, la Tour des Dieux sort de l'eau et Link peut y accéder.
+              </p>
+              <p class="centered">
+                Cette tour a pour but de tester le courage des hommes, ceux qui réussissent ces épreuves obtiennent la force nécessaire pour vaincre le mal. 
               </p>
               <div class="secondary-section__cards">
                 <div class="secondary-section__items">
-                  <img src="pictures/interface/NayruPearl.png" class="secondary-section__items--images" alt="Image de la perle de la déesse Nayru. La perle est ronde et bleu avec le symbole de Nayru: 3 croissant de lune ce faisant do en formation de triangle avec un cercle dans le millieu des croissants de lune.">
-                  <h3 class="header-3--centered">Perle de Nayru</h3>
-                  <p class="paragraphs--centered">Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br /> Eveniet quidem impedit consequatur voluptatem vitae illo beatae dicta tempora!</p>
+                  <img src="src/pictures/interface/NayruPearl.png" class="secondary-section__items--images" alt="Image de la perle de la déesse Nayru. La perle est ronde et bleu avec le symbole de Nayru: 3 croissant de lune ce faisant do en formation de triangle avec un cercle dans le millieu des croissants de lune.">
+                  <h3 class="centered">Perle de Nayru</h3>
+                  <p class="centered">La Perle de Nayru est en possession de Jabu qui a été délogé de l'île du Poisson par Ganondorf et qui a trouvé refuge derrière l'île de l'Aurore. Lorsque Link l'aura trouvé, Jabu lui confiera la Perle de Nayru. C'est la seule perle pour laquelle il ne faut pas faire de donjon. </p>
                 </div>
                 <div class="secondary-section__items">
-                  <img src="pictures/interface/FarorePearl.png" class="secondary-section__items--images" alt="Image de la perle de la déesse Farore. La perle est ronde et verte avec le symbole de Farore: Un petit cercle vert dans le milieu avec 2 croissant de lune qui l'entour, le premier croissant de lune étant plus petit que le second, les 3 symbole sont imbriqué.">
-                  <h3 class="header-3--centered">Perle de Farore</h3>
-                  <p class="paragraphs--centered">Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br /> Eveniet quidem impedit consequatur voluptatem vitae illo beatae dicta tempora!</p>
+                  <img src="src/pictures/interface/FarorePearl.png" class="secondary-section__items--images" alt="Image de la perle de la déesse Farore. La perle est ronde et verte avec le symbole de Farore: Un petit cercle vert dans le milieu avec 2 croissant de lune qui l'entour, le premier croissant de lune étant plus petit que le second, les 3 symbole sont imbriqué.">
+                  <h3 class="centered">Perle de Farore</h3>
+                  <p class="centered">La Perle de Farore se trouve sur l'île aux Forêts, en possession de l'Arbre Mojo, qui la cédera à Link après qu'il a sauvé Dumoria des bois Défendus. Et ce n'est qu'après avoir assisté à la cérémonie des Korogus que l'Arbre Mojo donnera la Perle de Farore à Link.</p>
                 </div>
                 <div class="secondary-section__items">
-                  <img src="pictures/interface/DinPearl.png" class="secondary-section__items--images" alt="Image de la perle de la déesse Din. La perle est orange avec le symbole de Din: 3 symbole en vague. Le premier symbole vagué fini avec un rond à l'extremité droite. Le symbole vagué du milieu fini en pointes autant a gauche que a droite et le dernier symbole vagué ce termine en cercle pointant vers le bas du côté gauche.">
-                  <h3 class="header-3--centered">Perle de Din</h3>
-                  <p class="paragraphs--centered">Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br /> Eveniet quidem impedit consequatur voluptatem vitae illo beatae dicta tempora!</p>
+                  <img src="src/pictures/interface/DinPearl.png" class="secondary-section__items--images" alt="Image de la perle de la déesse Din. La perle est orange avec le symbole de Din: 3 symbole en vague. Le premier symbole vagué fini avec un rond à l'extremité droite. Le symbole vagué du milieu fini en pointes autant a gauche que a droite et le dernier symbole vagué ce termine en cercle pointant vers le bas du côté gauche.">
+                  <h3 class="centered">Perle de Din</h3>
+                  <p class="centered">La Perle de Din se trouve sur l'île du Dragon, c'est Scaff le fils du chef des Piafs qui la possède mais ne souhaite pas s'en séparer. Ce n'est que lorsque Link aura calmé la colère de Valoo que Scaff acceptera de la donner à Link. </p>
                 </div>
               </div>
             </section>
             <div class="separators" role="separator">
-              <img src="pictures/interface/separtor.png" class="separators__image" alt="Image de séparation entre les différente section. L'image afficher est le synbole d'Hyrule/La famille royale en doré avec la Mater Sword de chaque côté, le bout pointu de l'épée pointé vers le synbole d'Hyrule.">
+              <img src="src/pictures/interface/separtor.png" class="separators__image" alt="Image de séparation entre les différente section. L'image afficher est le synbole d'Hyrule/La famille royale en doré avec la Mater Sword de chaque côté, le bout pointu de l'épée pointé vers le synbole d'Hyrule.">
             </div>
             <section>
-              <h2 class="header-2--centered">Galerie</h2>
+              <h2 class="centered">Galerie</h2>
               <div class="grid">
-                <div class="grid__item grid__item-a"><img src="pictures/gallery/item_a.png" class="grid__image" alt="A blue picture with the word Placeholder followed by a heart are written on it. No but seriously... is the tiny note in the bottom right corner."></div>
-                <div class="grid__item grid__item-b"><img src="pictures/gallery/item_b.png" class="grid__image" alt="A turquoise colored picture with the work Placeholder ! written on it. The bottom right note says Yes again..."></div>
-                <div class="grid__item grid__item-c"><img src="pictures/gallery/item_c.png" class="grid__image" alt="A red picture with Placeholder followed by a smiley face is displayed here with the bottom right note saying : Why are you like this grid."></div>
-                <div class="grid__item grid__item-d"><img src="pictures/gallery/item_d.png" class="grid__image" alt="A purple picture is displayed with the words Another One! Shown and a little earth. The bottom right note read as following: No but seriously this grid is killing my last braincell."></div>
-                <div class="grid__item grid__item-e"><img src="pictures/gallery/item_e.png" class="grid__image" alt="The fifth placeholder image is a green background with the words: Yay another placeholder! are written. The bottom right corner says: Geez how many are there? "></div>
-                <div class="grid__item grid__item-f"><img src="pictures/gallery/item_f.png" class="grid__image" alt="The last placeholder image is orange with the word LONG! written on it in a vertical display. The bottom right corner note says : Finally the last one."></div>
+                <div class="grid__item grid__item-a"><img src="src/pictures/gallery/item_a.png" class="grid__image" alt="Une illustration représentant le monde de Wind Waker sous forme de carte sur un globe terrestre en bas de l'image. Le protagoniste Link se tient au centre, avec les personnages secondaires rencontré au cours du jeu de chaque côté. La Forteresse abandonnée est visible en arrière-plan. La tour des dieux est également visible à l'extrême gauche. L'un des boss vole vers Valoo, un dragon. À l'arrière-plan, Ganondorf, le BBEG, nous tourne le dos."></div>
+                <div class="grid__item grid__item-b"><img src="src/pictures/gallery/item_b.png" class="grid__image" alt="Ici, sur un fond bleu et violet, on peut voir Zelda à l'extrême droite de l'image, tirant sur son arc pour tirer sur Ganondorf à l'extrême gauche. Link est au milieu des deux personnages, arrêtant l'une des épées de Gannon avec sa propre Épée de Légende."></div>
+                <div class="grid__item grid__item-c"><img src="src/pictures/gallery/item_c.png" class="grid__image" alt="Voici une capture d'écran du jeu, Link en avant-plan se préparant pendant que le boss Gohma lui crie dessus, fraîchement sorti de sa piscine de magma."></div>
+                <div class="grid__item grid__item-d"><img src="src/pictures/gallery/item_d.png" class="grid__image" alt="Voici une deuxième capture d'écran du jeu où Link semble légèrement confus, debout au milieu du château d'Hyrule, avec une statue d'une ancienne incarnation en arrière-plan. Le château est entièrement vide et dégage une atmosphère étrange."></div>
+                <div class="grid__item grid__item-e"><a href="https://www.deviantart.com/hyliabeilschmidt/art/Wind-Waker-Stained-Glass-374804006"><img src="src/pictures/gallery/item_e.png" class="grid__image" alt="Voici un fanart réalisé par un utilisateur de DeviantArt appelé Hyliabeilschmidt de Link et Zelda dans un style vitrail."></a></div>
+                <div class="grid__item grid__item-f"><img src="src/pictures/gallery/item_f.png" class="grid__image" alt="Cette dernière image montre Gannondord en arrière-plan, dos à nous. Au milieu, Link navigue sur son fidèle bateau parlant, et en bas, le logo du jeu."></div>
               </div>
             </section>
             <div class="separators" role="separator">
-              <img src="pictures/interface/separtor.png" class="separators__image" alt="Image de séparation entre les différente section. L'image afficher est le synbole d'Hyrule/La famille royale en doré avec la Mater Sword de chaque côté, le bout pointu de l'épée pointé vers le synbole d'Hyrule.">
+              <img src="src/pictures/interface/separtor.png" class="separators__image" alt="Image de séparation entre les différente section. L'image afficher est le synbole d'Hyrule/La famille royale en doré avec la Mater Sword de chaque côté, le bout pointu de l'épée pointé vers le synbole d'Hyrule.">
             </div>
             <section>
               <div class="statistics">
                 <div class="statistics__items">
-                  <img src="pictures/interface/piechart.png" class="statistics__image" alt="Un diagramme circulaire affichant les copies vendu pour 5 des jeux de Legend of Zelda. Ocarina of Time: 7.6 million. Wind Waker (2002): 4.6 million. Zelda Wind Waker HD: 2.37 million. Twilight Princess: 8.85 million et Breath of the Wild : 31.85 million.">
+                  <img src="src/pictures/interface/piechart.png" class="statistics__image" alt="Un diagramme circulaire affichant les copies vendu pour 5 des jeux de Legend of Zelda. Ocarina of Time: 7.6 million. Wind Waker (2002): 4.6 million. Zelda Wind Waker HD: 2.37 million. Twilight Princess: 8.85 million et Breath of the Wild : 31.85 million.">
                 </div>
                 <div class="statistics__items">
-                  <h2 class="header-2--centered">Statistics</h2>
-                  <p class="paragraphs--centered">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum minus mollitia, magnam nam aperiam eaque harum aspernatur animi itaque tempore.</p>
-                  <div class="statistics__itemnized-list">
+                  <h2 class="centered">Statistics</h2>
+                   <div class="statistics__itemnized-list">
                     <div class="statistics__items">
                       <h3 class="header-3">4.6 million</h3>
                       <p class="paragraphs">
@@ -239,80 +227,99 @@
                       </p>
                     </div>
                   </div>
-                  <div class='buttons buttons--statistics' tabindex="0" role="navigation">
-                    <div class='buttons__inner'>
-                      <div class='buttons__text'>
-                        <p>View more</p>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
               
               
             </section>
             <div class="separators">
-              <img src="pictures/interface/separtor.png" class="separators__image" alt="Image de séparation entre les différente section. L'image afficher est le synbole d'Hyrule/La famille royale en doré avec la Mater Sword de chaque côté, le bout pointu de l'épée pointé vers le synbole d'Hyrule.">
+              <img src="src/pictures/interface/separtor.png" class="separators__image" alt="Image de séparation entre les différente section. L'image afficher est le synbole d'Hyrule/La famille royale en doré avec la Mater Sword de chaque côté, le bout pointu de l'épée pointé vers le synbole d'Hyrule.">
             </div>
             <section ID="section3">
-              <h2 class="header-2--centered">
+              <h2 class="centered">
                 Bosses
               </h2>
-              <p class="paragraphs--centered">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quaerat explicabo commodi ab tempore rerum id. <br />
-                Pariatur similique vitae veniam quibusdam reprehenderit molestias aliquid quisquam incidunt soluta rem aut excepturi doloremque delectus doloribus laborum! Iusto!</p>
               <div class="cards">
 
                 <div class="cards__items">
-                  <img src="pictures/bosses/Gohma.png" class="cards__picture" alt="Image affichant la tête de Ghoma le premier boss rencontré pendant le jeu Wind Waker. C'est une créature semblable à son homonyme dans Ocarina of Time, sauf qu'il vit dans la lave et est constitué d'une épaisse carapace qu'il faut briser. Il semble être un Magmopendre très évolué. "><br />
-                  <h3 class="header-3--centered">Ghoma</h3>
-                  <h4 class="header-4--centered">Le fléau de l'Île du Dragon</h4>
-                  <p class="paragraphs--centered">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae earum officiis corrupti fugit autem, architecto excepturi quae quam non, dignissimos eaque ab repellendus voluptatibus ut? Odio recusandae, labore dolores dolor, exercitationem deserunt rem sunt illo inventore quia eaque excepturi distinctio dolore! Facilis a optio ullam esse reiciendis, maiores quia veniam.
+                  <img src="src/pictures/bosses/Gohma.png" class="cards__picture" alt="Image affichant la tête de Ghoma le premier boss rencontré pendant le jeu Wind Waker. C'est une créature semblable à son homonyme dans Ocarina of Time, sauf qu'il vit dans la lave et est constitué d'une épaisse carapace qu'il faut briser. Il semble être un Magmopendre très évolué. "><br />
+                  <h3 class="centered">Ghoma</h3>
+                  <h4 class="centered">Le fléau de l'Île du Dragon</h4>
+                  <p class="centered">
+                    Gohma est le boss de la caverne du Dragon dans The Wind Waker.
+                  </p>
+                  <p class="centered">
+                    La salle où il se trouve se situe juste en-dessous de Valoo. Il fait souffrir le dragon et provoque sa colère. Après l'avoir vaincu, Valoo redevient calme, et les Piafs cessent de s'inquiéter pour lui et pour l'île. 
+                  </p>
+                  <p class="centered">
+                    C'est une créature semblable à son homonyme dans Ocarina of Time, sauf qu'il vit dans la lave et est constitué d'une épaisse carapace qu'il faut briser. Il semble être un Magmopendre très évolué. 
                   </p>
                   <br />
-                  <p class="paragraphs--icons">
+                  <p class="icons--cards">
                     <i class="fa-duotone fa-fire"></i>
                     <i class="fa-duotone fa-heart-half-stroke"></i>
                     <i class="fa-duotone fa-dragon"></i>
                   </p>
                 </div>
                 <div class="cards__items">
-                  <img src="pictures/bosses/Kalle.png" class="cards__picture" alt="Image affichant la la tête de Karle Demos, le second bosse rencontré pendant le jeu Wind Waker. Son point faible se trouve être une Mojo Baba multicolore qui commande le reste du corps. Il possède des pétales géantes qui le recouvre et de multiples tentacules similaire à des Dexivine qui lui permettent de s'accrocher au plafond et d'attaquer l'ennemi et les faisant jaillir du sol. "><br />
-                  <h3 class="header-3--centered">Karle Demos</h3>
-                  <h4 class="header-4--centered">Empereur des Bois Défendus</h4>
-                  <p class="paragraphs--centered">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae earum officiis corrupti fugit autem, architecto excepturi quae quam non, dignissimos eaque ab repellendus voluptatibus ut? Odio recusandae, labore dolores dolor, exercitationem deserunt rem sunt illo inventore quia eaque excepturi distinctio dolore! Facilis a optio ullam esse reiciendis, maiores quia veniam.
+                  <img src="src/pictures/bosses/Kalle.png" class="cards__picture" alt="Image affichant la la tête de Karle Demos, le second bosse rencontré pendant le jeu Wind Waker. Son point faible se trouve être une Mojo Baba multicolore qui commande le reste du corps. Il possède des pétales géantes qui le recouvre et de multiples tentacules similaire à des Dexivine qui lui permettent de s'accrocher au plafond et d'attaquer l'ennemi et les faisant jaillir du sol. "><br />
+                  <h3 class="centered">Karle Demos</h3>
+                  <h4 class="centered">Empereur des Bois Défendus</h4>
+                  <p class="centered">
+                    Karle Demos est le boss des Bois Défendus dans The Wind Waker.
+                  </p>
+                  <p class="centered">
+                    Comme certains boss, il semble être une version plus puissante d'une espèce d'ennemis normaux, dans ce cas les Bokobaba. 
+                  </p>
+                  <p class="centered">
+                    Son point faible se trouve être une Mojo Baba multicolore qui commande le reste du corps. Il possède des pétales géantes qui le recouvre et de multiples tentacules similaire à des Dexivine qui lui permettent de s'accrocher au plafond et d'attaquer l'ennemi et les faisant jaillir du sol.
                   </p>
                   <br />
-                  <p class="paragraphs--icons">
+                  <p class="icons--cards">
                     <i class="fa-duotone fa-leaf"></i>
                     <i class="fa-duotone fa-heart-half-stroke"></i>
                     <i class="fa-duotone fa-wind"></i>
                   </p>
                 </div>
                 <div class="cards__items">
-                  <img src="pictures/bosses/Molgera.png" class="cards__picture" alt="Image affichant la tête de Gayla le bosse du Temple du Vent dans le jeu Wind Waker. Ce monstre ressemble à un énorme serpent dont la tête ressemble au manche d'une épée qui vit dans les sables et capable de voler. Il tente d'avaler Link en le faisant glisser jusqu'à lui. Il peut aussi générer de petites créatures, plus petites qui lui, des Lanmolas, qui se cachent dans le sable et sautent partout dans la salle. Il est possible que Gayla soit lui-même un Lanmola. "><br />
-                  <h3 class="header-3--centered">Gayla</h3>
-                  <h4 class="header-4--centered">Roi des Lanmolas</h4>
-                  <p class="paragraphs--centered">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae earum officiis corrupti fugit autem, architecto excepturi quae quam non, dignissimos eaque ab repellendus voluptatibus ut? Odio recusandae, labore dolores dolor, exercitationem deserunt rem sunt illo inventore quia eaque excepturi distinctio dolore! Facilis a optio ullam esse reiciendis, maiores quia veniam.
+                  <img src="src/pictures/bosses/Molgera.png" class="cards__picture" alt="Image affichant la tête de Gayla le bosse du Temple du Vent dans le jeu Wind Waker. Ce monstre ressemble à un énorme serpent dont la tête ressemble au manche d'une épée qui vit dans les sables et capable de voler. Il tente d'avaler Link en le faisant glisser jusqu'à lui. Il peut aussi générer de petites créatures, plus petites qui lui, des Lanmolas, qui se cachent dans le sable et sautent partout dans la salle. Il est possible que Gayla soit lui-même un Lanmola. "><br />
+                  <h3 class="centered">Gayla</h3>
+                  <h4 class="centered">Roi des Lanmolas</h4>
+                  <p class="centered">
+                    Gayla est le boss du temple du Vent dans The Wind Waker. 
+                  </p>
+                  <p class="centered">
+                    Ce monstre ressemble à un énorme serpent dont la tête ressemble au manche d'une épée qui vit dans les sables et capable de voler. Il tente d'avaler Link en le faisant glisser jusqu'à lui. Il peut aussi générer de petites créatures, plus petites qui lui, des Lanmolas, qui se cachent dans le sable et sautent partout dans la salle. Il est possible que Gayla soit lui-même un Lanmola.
+                  </p>
+                  <p class="centered">
+                    Comme tous les autres boss excepté Gordon et le Roi Cuirasse, Gayla doit être ré-affronté dans un univers noir et blanc de la tour de Ganon. 
                   </p>
                   <br />
-                  <p class="paragraphs--icons">
+                  <p class="icons--cards">
                     <i class="fa-duotone fa-dungeon"></i>
                     <i class="fa-duotone fa-heart-half-stroke"></i>
                     <i class="fa-duotone fa-bugs"></i>
                   </p>
                 </div>
+                <div class="cards__placeholder"></div>
                 <div class="cards__items">0-
-                  <img src="pictures/bosses/Jalhalla.png" class="cards__picture" alt="Image affichant la tête de Jay-Harla, le bosse rencontré dans le temple de la terre dans le jeu Wind Waker. Il s'agit d'un énorme fantôme. Il est en réalité composé de plusieurs petits fantômes rassemblés dans un masque."><br />
-                  <h3 class="header-3--centered">Jay-Harla</h3>
-                  <h4 class="header-4--centered">Agglomération des spectres</h4>
-                  <p class="paragraphs--centered">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae earum officiis corrupti fugit autem, architecto excepturi quae quam non, dignissimos eaque ab repellendus voluptatibus ut? Odio recusandae, labore dolores dolor, exercitationem deserunt rem sunt illo inventore quia eaque excepturi distinctio dolore! Facilis a optio ullam esse reiciendis, maiores quia veniam.
+                  <img src="src/pictures/bosses/Jalhalla.png" class="cards__picture" alt="Image affichant la tête de Jay-Harla, le bosse rencontré dans le temple de la terre dans le jeu Wind Waker. Il s'agit d'un énorme fantôme. Il est en réalité composé de plusieurs petits fantômes rassemblés dans un masque."><br />
+                  <h3 class="centered">Jay-Harla</h3>
+                  <h4 class="centered">Agglomération des spectres</h4>
+                  <p class="centered">
+                    Jay-Harla est le boss du temple de la Terre dans The Wind Waker. 
+                  </p>
+                  <p class="centered">
+                    Il s'agit d'un énorme fantôme. Il est en réalité composé de plusieurs petits fantômes rassemblés dans un masque. Lorsqu'il est en contact avec de la lumière, il se solidifie et devient lourd. 
+                  </p>
+                  <p class="centered">
+                    Jay-Harla attaque avec sa lanterne, en projetant des boules de feu ou en soufflant dessus pour créer une sorte de lance-flamme. Il peut aussi souffler un vent puissant pour projeter Link vers les murs hérissés de pics de la salle. 
+                  </p>
+                  <p class="centered">
+                    Comme tous les autres boss, exceptés Gordon et le roi Cuirasse, Jay-Harla doit être ré-affronté dans un univers noir et blanc de la tour de Ganon. 
                   </p>
                   <br />
-                  <p class="paragraphs--icons">
+                  <p class="icons--cards">
                     <i class="fa-duotone fa-shield-heart"></i>
                     <i class="fa-duotone fa-heart-half-stroke"></i>
                     <i class="fa-duotone fa-sun"></i>
@@ -322,16 +329,15 @@
 
             </section>
             <div class="separators" role="separator">
-              <img src="pictures/interface/separtor.png" class="separators__image" alt="Image de séparation entre les différente section. L'image afficher est le synbole d'Hyrule/La famille royale en doré avec la Mater Sword de chaque côté, le bout pointu de l'épée pointé vers le synbole d'Hyrule.">
+              <img src="src/pictures/interface/separtor.png" class="separators__image" alt="Image de séparation entre les différente section. L'image afficher est le synbole d'Hyrule/La famille royale en doré avec la Mater Sword de chaque côté, le bout pointu de l'épée pointé vers le synbole d'Hyrule.">
             </div>
             <section ID="section4">
               <div class="map">
-                <img src="pictures/interface/map.png" class="map__image" alt="Ici s'affiche une map du jeu La légende de Zelda : Wind Waker.">
+                <img src="src/pictures/interface/map.png" class="map__image" alt="Ici s'affiche une map du jeu La légende de Zelda : Wind Waker.">
               </div>
               <div class="form">
                 <form name="form">
-                  <h2 class="header-2">Formulaire</h2>
-                  <p class="paragraphs--tiny">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam vero temporibus fugiat voluptatibus expedita? Odio excepturi ab libero autem a et, ullam iste quidem expedita tempora atque, consequuntur assumenda! Delectus.</p>
+                  <h2 class="header-2">Infolettre</h2>
                   <div class="form__name-entry">
                     <div class="input-control">
                       <label for="familyName">
@@ -345,7 +351,6 @@
                       </label>
                       <div ID="firstName_errorMessage" class="form__error-message"></div>
                     </div>
-                    
                   </div>
                   <div class="input-control">
                     <label for="email">
@@ -365,11 +370,11 @@
               </div>
             </section>
             <div class="separators" role="separator">
-              <img src="pictures/interface/separtor.png" class="separators__image" alt="Image de séparation entre les différente section. L'image afficher est le synbole d'Hyrule/La famille royale en doré avec la Mater Sword de chaque côté, le bout pointu de l'épée pointé vers le synbole d'Hyrule.">
+              <img src="src/pictures/interface/separtor.png" class="separators__image" alt="Image de séparation entre les différente section. L'image afficher est le synbole d'Hyrule/La famille royale en doré avec la Mater Sword de chaque côté, le bout pointu de l'épée pointé vers le synbole d'Hyrule.">
             </div>
             <section>
               <h2>
-                <img src="pictures/interface/logo.png" class="logo" alt="Logo du jeu Zelda Wind Waker affichant le nom du jeu avec un bateau à tête de lion en arrière du texte."><br />
+                <img src="src/pictures/interface/logo.png" class="logo" alt="Logo du jeu Zelda Wind Waker affichant le nom du jeu avec un bateau à tête de lion en arrière du texte."><br />
               </h2>
               <div class="endPage-links">
                 <div>
@@ -400,13 +405,13 @@
         <p class="paragraphs">Fait par: Camille Élisabeth Bleau</p>
       </div>
       <div>
-        <a class="links--socials" href=""><i class="fa-brands fa-square-facebook"></i></a><a class="links--socials" href=""><i class="fa-brands fa-linkedin"></i></a><a class="links--socials" href=""><i class="fa-brands fa-square-twitter"></i></a><a class="links--socials" href=""><i class="fa-brands fa-square-instagram"></i></a>
+        <a class="icons--socials" href=""><i class="fa-brands fa-square-facebook"></i></a><a class="icons--socials" href=""><i class="fa-brands fa-linkedin"></i></a><a class="icons--socials" href=""><i class="fa-brands fa-square-twitter"></i></a><a class="icons--socials" href=""><i class="fa-brands fa-square-instagram"></i></a>
       </div>
       <div>
         <p class="paragraphs"><i class="fa-duotone fa-phone"></i> <a class="links" href="tel:#">+(123)-456-7890</a><br /> 
           <i class="fa-duotone fa-envelope"></i> <a class="links" href="mailto:cegep@troisriviere.com">cegep@troisriviere.com</a></p>
       </div>
     </footer>
-    <script src="javascript/sliderjavascript.js"></script>
+    <script src="src/javascript/sliderjavascript.js"></script>
 </body>
 </html>

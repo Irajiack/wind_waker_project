@@ -1,0 +1,100 @@
+/* ============================================= TEXT RELATED ================================================ */
+@use '../variables' as *;
+@use "../abstracts" as *;
+
+
+a
+{
+    @include font-size($p-font-sizes);
+    @include texts($color: $kellyGreen);
+    @include navigation();
+
+    @include on-event()
+        {
+           color: $pear;
+           text-decoration:underline overline;
+        };
+}
+p
+{
+    @include font-size($p-font-sizes);
+    color:$platinum;
+    @include texts($fontFamily: "Cormorant");
+}
+h1
+{
+    @include font-size($h1-font-sizes);
+    @include texts($fontFamily: "Tangerine");
+}
+h2
+{
+    @include font-size($h2-font-sizes);
+    @include texts($fontFamily: "Tangerine");
+}
+h3
+{
+    @include font-size($h3-font-sizes);
+    @include texts($fontFamily: "Philosopher", );
+}
+h4
+{
+    @include font-size($h4-font-sizes);
+    @include texts($fontFamily: "Philosopher");
+}
+h5, h6
+{
+    @include texts($fontFamily: "CrimsonText");
+}
+.important_text
+{
+    color:$rust;
+}
+
+.links
+{
+    &--main-nav
+    {
+        @include navigation($decoration: none);
+    }
+    &--screen-reader
+    {
+        border:0;
+        height:1px;
+        margin:-1px;
+        overflow:hidden;
+        padding:0;
+        position:absolute;
+        width:1px;
+        word-wrap:normal;
+    }
+}
+
+@font-face 
+{
+    font-family: "Philosopher";
+    src: url('fonts/Philosopher/Philosopher-Regular.ttf') format('truetype');
+}
+
+@font-face 
+{
+    font-family: "Cormorant";
+    src: url('fonts/Cormorant/static/Cormorant-Regular.ttf') format('truetype');
+}
+
+@font-face 
+{
+    font-family: "CrimsonText";
+    src: url('fonts/Crimson_Text/CrimsonText-Regular.ttf') format('truetype');
+}
+
+@font-face 
+{
+    font-family: "Sedan";
+    src: url('fonts/Sedan/Sedan-Regular.ttf') format('truetype');
+}
+
+@font-face 
+{
+    font-family: "Tangerine";
+    src: url('fonts/Tangerine/Tangerine-Regular.ttf') format('truetype');
+}
