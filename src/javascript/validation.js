@@ -20,7 +20,7 @@ const isValidEmail = email => {
     return emailRegex.test(String(email).toLowerCase());
 }
 
-const validationForm = () =>
+function validationForm()
 {
     let noError= true;
 
@@ -89,6 +89,9 @@ const validationForm = () =>
         setSuccess(review);
     }
     
-    return noError;
+    if(noError === true)
+    {
+        location.href = "/confirmation.html";
+    }
 }
 
