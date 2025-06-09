@@ -16,7 +16,7 @@
 
   <a class="links--screen-reader" href="#main_content">Aller au contenu principal</a>
     <header>
-        <img class="logo" src="src/pictures/interface/logo.png" tabindex="0" alt="Logo du jeu Zelda Wind Waker affichant le nom du jeu avec un bateau à tête de lion en arrière du texte.">
+        <a href="index.html" class="logo"><img width="100%" src="src/pictures/interface/logo.png" tabindex="0" alt="Logo du jeu Zelda Wind Waker affichant le nom du jeu avec un bateau à tête de lion en arrière du texte."></a>
         <nav class="main-nav" role="navigation">
             <ul class="main-nav__list" role="list">
                 <li class="main-nav__list-item" role="listitem"><a href="#main_content" class="links links--main-nav" tabindex="0"> <i class="fa-duotone fa-books"></i> Section 1</a></li>
@@ -336,7 +336,7 @@
                 <img src="src/pictures/interface/map.png" class="map__image" alt="Ici s'affiche une map du jeu La légende de Zelda : Wind Waker.">
               </div>
               <div class="form">
-                <form name="form">
+                <form name="form" action="javascript:validationForm();" novalidate>
                   <h2 class="header-2">Infolettre</h2>
                   <div class="form__name-entry">
                     <div class="input-control">
@@ -365,7 +365,7 @@
                     <div ID="review_errorMessage" class="form__error-message"></div>
                   </div>
                   
-                  <input ID="form__button" type="submit" value="Submit" onclick="return validationForm()">
+                  <input ID="form__button" type="submit" value="Submit" >
                 </form>
               </div>
             </section>
